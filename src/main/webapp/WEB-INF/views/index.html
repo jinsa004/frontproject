@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/main/resources/static/css/main.css" />
+    <link rel="stylesheet" href="/src/main/resources/static/css/reset.css" />
+    <title>메인페이지</title>
+  </head>
+  <body>
+    <div id="user_wrap">
+      <div class="header_wrap">
+        <header>
+          <div class="logo">
+            <a href="#">PROJECT_4</a>
+          </div>
+          <!-- .logo -->
+
+          <div class="search_bar">
+            <form class="cf">
+              <input
+                type="text"
+                id="search"
+                title="검색어 입력"
+                name="search"
+                placeholder="검색어를 입력해주세요."
+                maxlength="50"
+              />
+              <button type="submit" class="btn_search">검색</button>
+            </form>
+          </div>
+          <!-- .search_bar -->
+
+          <div class="login_box">
+            <button
+              class="btn_login"
+              type="button"
+              onClick="javascript:popOpen();"
+            >
+              로그인
+            </button>
+            <button
+              class="btn_join"
+              type="button"
+              onClick="javascript:popOpen();"
+            >
+              회원가입
+            </button>
+            <a href="#" class="btn_company">기업 서비스</a
+            ><!-- .btn_company -->
+          </div>
+          <!-- .login_box -->
+
+          <nav>
+            <ul>
+              <li>
+                <a href="#">채용공고</a>
+              </li>
+              <li>
+                <a href="#">매칭리스트</a>
+              </li>
+              <li>
+                <a href="#">구독기업광고</a>
+              </li>
+              <li>
+                <a href="#">기업정보</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- nav -->
+        </header>
+        <!-- header -->
+      </div>
+      <!-- .header_wrap -->
+
+      <div class="container">
+        <div class="tablist">
+          <ul>
+            <li>
+              <button class="btn_tab" type="button">전체직군</button>
+            </li>
+            <li>
+              <button class="btn_tab on" type="button">프론트엔드</button>
+            </li>
+            <li>
+              <button class="btn_tab" type="button">백엔드</button>
+            </li>
+            <li>
+              <button class="btn_tab" type="button">웹 풀스택</button>
+            </li>
+            <li>
+              <button class="btn_tab" type="button">안드로이드</button>
+            </li>
+            <li>
+              <button class="btn_tab" type="button">IOS</button>
+            </li>
+          </ul>
+        </div>
+        <!-- .tablist -->
+
+        <section>
+          <div class="notice_box">
+            <table>
+              <colgroup>
+                <col width="200px" />
+                <col width="600px" />
+                <col width="160px" />
+                <col width="120px" />
+                <col width="120px" />
+              </colgroup>
+              <thead>
+                <tr class="notice_title">
+                  <th scope="col">기업명</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">지원자격</th>
+                  <th scope="col">근무조건</th>
+                  <th scope="col">마감일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#"
+                      ><img src="/src/main/resources/static/img/logo_1.png"
+                    /></a>
+                  </td>
+                  <td>
+                    <a href="#">
+                      보안/운영 시스템 개발팀 백엔드 개발자 모집
+                      <span class="notice_small"
+                        >백엔드/서버개발, 웹개발, 정보보안</span
+                      >
+                    </a>
+                  </td>
+                  <td>경력무관<span class="notice_small">학력무관</span></td>
+                  <td>정규직<span class="notice_small">부산</span></td>
+                  <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"
+                      ><img src="/src/main/resources/static/img/logo_1.png"
+                    /></a>
+                  </td>
+                  <td>
+                    <a href="#">
+                      보안/운영 시스템 개발팀 백엔드 개발자 모집
+                      <span class="notice_small"
+                        >백엔드/서버개발, 웹개발, 정보보안</span
+                      >
+                    </a>
+                  </td>
+                  <td>경력무관<span class="notice_small">학력무관</span></td>
+                  <td>정규직<span class="notice_small">부산</span></td>
+                  <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"
+                      ><img src="/src/main/resources/static/img/logo_1.png"
+                    /></a>
+                  </td>
+                  <td>
+                    <a href="#">
+                      보안/운영 시스템 개발팀 백엔드 개발자 모집
+                      <span class="notice_small"
+                        >백엔드/서버개발, 웹개발, 정보보안</span
+                      >
+                    </a>
+                  </td>
+                  <td>경력무관<span class="notice_small">학력무관</span></td>
+                  <td>정규직<span class="notice_small">부산</span></td>
+                  <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"
+                      ><img src="/src/main/resources/static/img/logo_1.png"
+                    /></a>
+                  </td>
+                  <td>
+                    <a href="#">
+                      보안/운영 시스템 개발팀 백엔드 개발자 모집
+                      <span class="notice_small"
+                        >백엔드/서버개발, 웹개발, 정보보안</span
+                      >
+                    </a>
+                  </td>
+                  <td>경력무관<span class="notice_small">학력무관</span></td>
+                  <td>정규직<span class="notice_small">부산</span></td>
+                  <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- .notice_box -->
+        </section>
+        <div class="paging">
+          <ul class="pagination">
+            <li class="page-item page-prev">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item page-next">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- .container -->
+
+      <footer id="sri_footer" class="sri_footer">
+        <div class="wrap_footer">
+          <div
+            class="links"
+            role="navigation"
+            aria-label="4조 서비스 정책 및 이용문의"
+          >
+            <ul>
+              <li class="first">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener"
+                  title="회사소개 새창열기"
+                  >회사소개</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener"
+                  title="인재채용 새창열기"
+                  >인재채용</a
+                >
+              </li>
+              <li>
+                <a href="" title="회원약관 바로가기">회원약관</a>
+              </li>
+              <li class="bold">
+                <a href="" title="개인정보처리방침 바로가기"
+                  >개인정보처리방침</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  onclick="window.open(this.href, '이메일무단수집거부', 'width=380,height=200,left=0,top=0'); return false;"
+                  rel="noopener"
+                  title="이메일무단수집거부 바로가기"
+                  >이메일무단수집거부</a
+                >
+              </li>
+              <li>
+                <a href="" target="_blank" rel="noopener" title="채용정보 API"
+                  >채용정보 API</a
+                >
+              </li>
+              <li>
+                <a href="" target="_self" rel="noopener" title="제휴문의"
+                  >제휴문의</a
+                >
+              </li>
+              <li>
+                <a href="" title="고객센터 바로가기">고객센터</a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <div class="help_list">
+              <dl>
+                <dt>4조 고객센터</dt>
+                <dd>051-111-1111 (평일 09:00~18:00, 주말공휴일 휴무)</dd>
+              </dl>
+              <dl>
+                <dt>이메일</dt>
+                <dd>
+                  <a href="" target="_blank" title="이메일 바로가기"
+                    >4조@naver.com</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>FAX</dt>
+                <dd>051-111-1111</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- #wrap -->
+  </body>
+</html>
