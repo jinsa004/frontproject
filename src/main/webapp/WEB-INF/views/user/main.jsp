@@ -1,15 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%> <%@ taglib prefix="c"
-uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>메인페이지</title>
-  </head>
-  <body>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="../layout/header.jsp"%>
+
     <div id="user_wrap">
       <div class="container">
         <div class="tablist">
@@ -59,7 +50,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
                 <tr>
                   <td>
                     <a href="#"
-                      ><img src="/src/main/resources/static/img/logo_1.png"
+                      ><img src="/img/logo_1.png"
                     /></a>
                   </td>
                   <td>
@@ -77,7 +68,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
                 <tr>
                   <td>
                     <a href="#"
-                      ><img src="/src/main/resources/static/img/logo_1.png"
+                      ><img src="/img/logo_1.png"
                     /></a>
                   </td>
                   <td>
@@ -95,7 +86,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
                 <tr>
                   <td>
                     <a href="#"
-                      ><img src="/src/main/resources/static/img/logo_1.png"
+                      ><img src="/img/logo_1.png"
                     /></a>
                   </td>
                   <td>
@@ -113,7 +104,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
                 <tr>
                   <td>
                     <a href="#"
-                      ><img src="/src/main/resources/static/img/logo_1.png"
+                      ><img src="/img/logo_1.png"
                     /></a>
                   </td>
                   <td>
@@ -152,5 +143,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       <!-- .container -->
     </div>
     <!-- #wrap -->
-  </body>
-</html>
+
+
+    <script src="/js/main.js"></script>
+<%@ include file="../layout/footer.jsp"%>
