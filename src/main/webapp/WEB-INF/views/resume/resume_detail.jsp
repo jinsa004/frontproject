@@ -34,6 +34,28 @@
     .edu_btn:hover{
 
     }
+    .edu_list_item{
+      display: inline-block;
+    }
+
+    .edu_title{
+      display: inline-block;
+    }
+    
+    .career_btn{
+      border: 1px solid #ddd;
+      background-color: #fff;
+      size: 10px;
+    }
+    .career_btn:active{
+
+    }
+    .career_btn:hover{
+
+    }
+    .career_list_item{
+      display: inline-block;
+    }
 
   </style>
 </head>
@@ -99,7 +121,7 @@
           <h2 class="edu_title">학력사항</h2>
           <span>최종학력 선택 후 학력사항을 입력하세요</span>
         </div>
-        <div class="edu_form">
+        <div class="form_text">
           <div class="edu_select">
             <div class="btn-group">
               <button type="button" class="edu_btn">고등학교 졸업</button>
@@ -108,23 +130,71 @@
           </div>
           <hr/>
 
-          <div class="form_text">
-            <span>홍길동</span><span>남, 2000 (00세/만 00세)</span>
-            <ul class="info_list">
-              <li class="email" style="display: inline;">이메일</li>
-              <span>hong@nate.com</span><br>
-              <li class="phone_number" style="display: inline;">휴대폰</li>
-              <span>010-0000-0000</span><br>
-              <li class="number" style="display: inline;">전화번호</li>
-              <span>010-0000-0000</span><br>
-              <li class="adress" style="display: inline;">주소</li>
-              <span>부산 부산진구 중앙대로 749 </span>
-            </ul>
+          <div class="edu_form">
+            <h4>대학.대학원 정보 입력</h4>
+            <div class="edu_list">
+              <p class="edu_list_item">대학</p>
+              <span>대학교(4년)</span><br>
+              <p class="edu_list_item">학교명</p>
+              <span>00대학교</span><br>
+              <p class="edu_list_item">지역</p>
+              <span>부산</span><br>
+              <p class="edu_list_item">재학기한</p>
+              <span>202206 - 202212</span>
+              <p class="edu_list_item">전공</p>
+              <span>주전공 경제/경영</span>
+              <p class="edu_list_item">주/야간</p>
+              <span>주간</span>
+              <p class="edu_list_item">학점</p>
+              <span>0.0 / 4.5</span>
+            </div>
           </div>
         </div>
       </div>
-      
+      <!-- edu -->
+      <br><br>
 
+      <div class="form">
+        <div class="form_title">
+          <h2 class="career_title">경력사항</h2>
+        </div>
+        <div class="form_text">
+          <div class="career_select">
+            <div class="btn-group">
+              <button type="button" class="career_btn">신입</button>
+              <button type="button" class="career_btn">경력</button>
+            </div>
+          </div>
+          <hr/>
+
+          <div class="career_form">
+            <div class="career_list">
+              <p class="career_list_item">회사명</p>
+              <span>그린</span><br>
+              <p class="career_list_item">재직기간</p>
+              <span>202206 - 202212</span><br>
+              <p class="career_list_item">퇴사사유</p>
+              <span>업직종 전환</span><br>
+              <p class="career_list_item">직급/직책</p>
+              <span>주임 1년차</span>
+              <p class="career_list_item">근무부서</p>
+              <span>영업관리부</span>
+              <p class="career_list_item">근무지역</p>
+              <span>부산</span>
+              <p class="career_list_item">연봉</p>
+              <span>0000만원</span>
+              <p class="career_list_item">담당업무</p>
+              <span>관리</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- edu -->
+      <br><br>
+
+      <div class="contact">
+        <button type="button" class="contact_empleyee">컨택하기</button>
+      </div>
       
     </div>
   </div>
