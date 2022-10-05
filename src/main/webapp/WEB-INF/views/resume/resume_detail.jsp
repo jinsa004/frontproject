@@ -119,7 +119,6 @@
       <div class="form">
         <div class="form_title">
           <h2 class="edu_title">학력사항</h2>
-          <span>최종학력 선택 후 학력사항을 입력하세요</span>
         </div>
         <div class="form_text">
           <div class="edu_select">
@@ -189,7 +188,7 @@
           </div>
         </div>
       </div>
-      <!-- edu -->
+      <!-- career -->
       <br><br>
 
       <div class="contact">
