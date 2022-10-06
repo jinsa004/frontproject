@@ -168,39 +168,42 @@ nav ul li a:hover{
     padding-top: 45px;
     text-align: center;
 }
-.tablist ul{
-
+.tablist ul.tabs{
+    font-size: 0;
+}
+.tablist ul.tabs li.on{
+    border-color: #435070;
+    font-weight: bold;
+    color: #435070;
+    background: #f4f4f4;
 }
 .tablist ul li{
     display: inline-block;
-    padding-left: 30px;
-}
-.tablist ul li:first-child{
-    padding-left: 0;
-}
-.tablist ul li .btn_tab{
-    padding: 7px 20px 6px;
-    min-width: 90px;
-    border: 1px solid #666;
+    text-align: center;
+    padding: 7px 24px 6px;
+    border: 1px solid #bbb;
     border-radius: 50px;
-    color: #666;
+    color: #333;
     font-size: 14px;
     background: #fff;
     cursor: pointer;
     transition: all 0.4s;
+    margin-left: 20px;
 }
-.tablist ul li .btn_tab:hover{
-    background: #eee;
+.tablist ul li:first-child{
+    margin-left: 0;
 }
-.tablist ul li .btn_tab.on{
-    border-color: #435070;
-    background-color: #435070;
-    font-weight: bold;
-    color: #fff;
+
+.tablist ul li:hover{
+    background: #d8d8d8;
 }
-.tablist ul li .btn_tab.on:hover{
-    background: #4876ef;
+.tablist ul li.on:hover{
+    background: #dee7ff;
 }
+
+.tab-content{ display:none;}
+.tab-content.on{ display:block;}
+
 section{
     width: 1200px;
     margin: 0 auto;

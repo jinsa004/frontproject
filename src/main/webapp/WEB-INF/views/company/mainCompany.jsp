@@ -4,25 +4,13 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
 <div id="company_wrap">
   <div class="container">
     <div class="tablist">
-      <ul>
-        <li>
-          <button class="btn_tab" type="button">전체직군</button>
-        </li>
-        <li>
-          <button class="btn_tab on" type="button">프론트엔드</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">백엔드</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">웹 풀스택</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">안드로이드</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">IOS</button>
-        </li>
+      <ul class="tabs">
+        <li class="btn_tab on" data-tab="tab-1">전체직군</li>
+        <li class="btn_tab" data-tab="tab-2">프론트엔드</li>
+        <li class="btn_tab" data-tab="tab-3">백엔드</li>
+        <li class="btn_tab" data-tab="tab-4">웹풀스택</li>
+        <li class="btn_tab" data-tab="tab-5">안드로이드</li>
+        <li class="btn_tab" data-tab="tab-6">IOS</li>
       </ul>
     </div>
     <!-- .tablist -->
@@ -31,7 +19,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
       <div class="notice_box">
         <div class="resume_list">
           <div class="resume_form">
-            <ul>
+            <ul id="tab-1" class="resume_inner resume_inner1 tab-content on">
               <li class="resume_cont">
                 <a href="#" class="list_title">
                   <span>최상의 결과를 이끌어 낼 4조 개발자들 화이팅</span>
@@ -65,7 +53,33 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                   <li class="part"><span>프론트엔드, 백엔드, 풀스택</span></li>
                 </ul>
               </li>
-            </ul>
+            </ul><!-- #tab-1 -->
+
+            <ul id="tab-2" class="resume_inner resume_inner2 tab-content">
+              <li class="resume_cont">
+                <a href="#" class="list_title">
+                  <span>최상의 결과를 이끌어 낼 4조 개발자들 화이팅</span>
+                </a>
+                <ul class="list_option">
+                  <li class="career">
+                    <span>신입</span>
+                  </li>
+                  <li class="part"><span>프론트엔드, 백엔드, 풀스택</span></li>
+                </ul>
+              </li>
+              <li class="resume_cont">
+                <a href="#" class="list_title">
+                  <span>최상의 결과를 이끌어 낼 4조 개발자들 화이팅</span>
+                </a>
+                <ul class="list_option">
+                  <li class="career">
+                    <span>신입</span>
+                  </li>
+                  <li class="part"><span>프론트엔드, 백엔드, 풀스택</span></li>
+                </ul>
+              </li>              
+            </ul><!-- #tab-2 -->
+
           </div>
         </div>
         <!-- .resume_list -->
