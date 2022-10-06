@@ -63,7 +63,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
 
           <nav>
             <ul>
-              <li>
+              <li class="on">
                 <a href="#">채용공고</a>
               </li>
               <li>
