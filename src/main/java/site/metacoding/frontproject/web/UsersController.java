@@ -14,6 +14,11 @@ import org.springframework.web.multipart.MultipartFile;
 @Controller
 public class UsersController {
 
+    @GetMapping("/onclick")
+    public String resume_detail2() {
+        return "onclick_form";
+    }
+
     @GetMapping("/upload")
     public String users() {
         return "upload";
