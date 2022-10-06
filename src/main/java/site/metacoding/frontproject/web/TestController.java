@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class TestController {
 
+    @GetMapping("/subscription")
+    public String subscriptionList() {
+        return "user/subscription";
+    }
+
     @GetMapping("/matching")
     public String matchingList() {
         return "user/matching";
