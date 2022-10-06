@@ -1,11 +1,14 @@
-$(".tablist ul li").click(() => {
-  $(".tablist ul li button").removeClass("on");
+$("ul.tabs li").click(function(){
+  var tab_id = $(this).attr("data-tab");
+  $("ul.tabs li").removeClass("on");
+  $(".tab-content").removeClass("on");
+  $(".tab-content").hide();
   $(this).addClass("on");
-});
-/* $("nav li").click(function () {
-  $("nav li a").removeClass("nav_black");
-  $("nav li a").addClass("nav_blue");
-}); */
+  $("#"+tab_id).addClass("on");
+  $("#"+tab_id).show();
+})
+
+
 
 $("#btnDelete").click(() => {
   DeletestadiumList();

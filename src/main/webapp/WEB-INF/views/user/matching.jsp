@@ -10,90 +10,79 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
 
     <section>
       <div class="notice_box">
-        <table>
-          <colgroup>
-            <col width="200px" />
-            <col width="600px" />
-            <col width="160px" />
-            <col width="120px" />
-            <col width="120px" />
-          </colgroup>
-          <thead>
-            <tr class="notice_title">
-              <th scope="col">기업명</th>
-              <th scope="col">제목</th>
-              <th scope="col">지원자격</th>
-              <th scope="col">근무조건</th>
-              <th scope="col">마감일</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="#"><img src="/img/logo_1.png" /></a>
-              </td>
-              <td>
-                <a href="#">
-                  보안/운영 시스템 개발팀 백엔드 개발자 모집
-                  <span class="notice_small"
-                    >백엔드/서버개발, 웹개발, 정보보안</span
-                  >
-                </a>
-              </td>
-              <td>경력무관<span class="notice_small">학력무관</span></td>
-              <td>정규직<span class="notice_small">부산</span></td>
-              <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#"><img src="/img/logo_1.png" /></a>
-              </td>
-              <td>
-                <a href="#">
-                  보안/운영 시스템 개발팀 백엔드 개발자 모집
-                  <span class="notice_small"
-                    >백엔드/서버개발, 웹개발, 정보보안</span
-                  >
-                </a>
-              </td>
-              <td>경력무관<span class="notice_small">학력무관</span></td>
-              <td>정규직<span class="notice_small">부산</span></td>
-              <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#"><img src="/img/logo_1.png" /></a>
-              </td>
-              <td>
-                <a href="#">
-                  보안/운영 시스템 개발팀 백엔드 개발자 모집
-                  <span class="notice_small"
-                    >백엔드/서버개발, 웹개발, 정보보안</span
-                  >
-                </a>
-              </td>
-              <td>경력무관<span class="notice_small">학력무관</span></td>
-              <td>정규직<span class="notice_small">부산</span></td>
-              <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#"><img src="/img/logo_1.png" /></a>
-              </td>
-              <td>
-                <a href="#">
-                  보안/운영 시스템 개발팀 백엔드 개발자 모집
-                  <span class="notice_small"
-                    >백엔드/서버개발, 웹개발, 정보보안</span
-                  >
-                </a>
-              </td>
-              <td>경력무관<span class="notice_small">학력무관</span></td>
-              <td>정규직<span class="notice_small">부산</span></td>
-              <td>~10/19(수)<span class="notice_small">(D-14)</span></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="notice_title">
+          <ul>
+            <li>기업명</li>
+            <li>제목</li>
+            <li>지원자격</li>
+            <li>근무조건</li>
+            <li>마감일</li>
+          </ul>
+        </div><!-- .notice_title -->
+        <div id="tab-1" class="notice_inner notice_inner1 tab-content on">
+          <div>
+            <ul>
+              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="#">
+                보안/운영 시스템 개발팀 백엔드 개발자 모집
+                <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
+              </a></li>
+              <li>경력무관<span class="notice_small">학력무관</span></li>
+              <li>정규직<span class="notice_small">부산</span></li>
+              <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="#">
+                보안/운영 시스템 개발팀 백엔드 개발자 모집
+                <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
+              </a></li>
+              <li>경력무관<span class="notice_small">학력무관</span></li>
+              <li>정규직<span class="notice_small">부산</span></li>
+              <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="#">
+                보안/운영 시스템 개발팀 백엔드 개발자 모집
+                <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
+              </a></li>
+              <li>경력무관<span class="notice_small">학력무관</span></li>
+              <li>정규직<span class="notice_small">부산</span></li>
+              <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
+            </ul>
+          </div>
+        </div><!-- .notice_inner1 -->
+
+        <div id="tab-2" class="notice_inner notice_inner2 tab-content">
+          <ul>
+            <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
+            <li><a href="#">
+              보안/운영 시스템 개발팀 백엔드 개발자 모집
+              <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
+            </a></li>
+            <li>경력무관<span class="notice_small">학력무관</span></li>
+            <li>정규직<span class="notice_small">부산</span></li>
+            <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
+          </ul>
+        </div><!-- .notice_inner2 -->
+
+        <div id="tab-3" class="notice_inner notice_inner3 tab-content">
+          <ul>
+            <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
+            <li><a href="#">
+              보안/운영 시스템 개발팀 백엔드 개발자 모집
+              <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
+            </a></li>
+            <li>경력무관<span class="notice_small">학력무관</span></li>
+            <li>정규직<span class="notice_small">부산</span></li>
+            <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
+          </ul>
+        </div><!-- .notice_inner3 -->
       </div>
       <!-- .notice_box -->
     </section>

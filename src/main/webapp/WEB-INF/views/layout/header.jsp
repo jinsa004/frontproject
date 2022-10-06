@@ -69,7 +69,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
           <nav>
             <ul>
               <li>
-                <a href="/main" class="nav_blue">채용공고</a>
+                <a href="/main">채용공고</a>
               </li>
               <li>
                 <a href="/matching">매칭리스트</a>
@@ -318,24 +318,5 @@ uri="http://java.sun.com/jsp/jstl/core"%>
     </div>
   </body>
 
-  <script type="text/javascript">
-    /*  $("nav ul li a").click(function () {
-      $(this).addClass("nav_blue").siblings().removeClass("nav_blue");
-    }); */
-    /* $("nav ul li a").click(function () {
-      $("nav ul li a").removeClass("nav_black");
-      $(this).addClass("nav_blue");
-    }); */
-
-    $("nav ul li a").click(function () {
-      if ($("nav ul li a").hasClass("nav_blue")) {
-        $("nav ul li a").removeClass("nav_blue");
-      } else {
-        $(this).addClass("nav_blue");
-      }
-    });
-    /* $("nav ul li a").click(function () {
-      $("nav ul li a").toggleClass("nav_blue");
-    }); */
-  </script>
+  
 </html>
