@@ -1,4 +1,4 @@
-#user_wrap{
+#company_wrap{
     position: relative;
     width: 100%;
 }
@@ -8,7 +8,7 @@
     left: 0px;
     right: 0px;
     z-index: 10;
-    background: #fff;
+    background: #435070;
     width: 100%;
     border-bottom: 1px solid #4876ef;
 }
@@ -29,7 +29,7 @@ header{
     left: 0;
 }
 .logo a{
-    color: #4876ef;
+    color: #fff;
 }
 
 .search_bar{
@@ -54,7 +54,7 @@ header{
 .search_bar input{
     width: 500px;
     height: 40px;
-    border: 2px solid #4876ef;
+    border: 2px solid #fff;
     border-radius: 50px;
     padding:0 16px;
     position: relative;
@@ -88,9 +88,9 @@ header{
     width: 90px;
     padding: 6px 0 7px;
     border-radius: 50px;
-    background: #4876ef;
-    color: #fff;
-    border: 1px solid #4876ef;
+    background: #fff;
+    color: #435070;
+    border: 1px solid #fff;
     font-weight: bold;
     cursor: pointer;
 }
@@ -98,22 +98,22 @@ header{
     width: 90px;
     padding: 6px 0 7px;
     border-radius: 50px;
-    background: #fff;
-    border: 1px solid #4876ef;
-    color: #4876ef;
+    background: #435070;
+    border: 1px solid #fff;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     margin-left: 5px;
 }
 
 .login_box .btn_company{
-    color: #666;
+    color: #91ADF2;
     font-size: 14px;
     width: 100px;
     padding: 5px 0 6px;
     border-radius: 50px;
-    background: #fff;
-    border: 1px solid #DDD;
+    background: #435070;
+    border: 1px solid #91ADF2;
     display: inline-block;
     margin-left: 5px;
 }
@@ -126,7 +126,7 @@ nav{
     text-align: left;
 }
 .nav_blue{
-    color: #36f;
+    color: #91ADF2;
     font-weight: 500;
 }
 /* .nav_black{
@@ -147,22 +147,24 @@ nav ul li:first-child{
     padding-left: 0;
 }
 nav ul li a{
-    color: #333;
+    color: #fff;
     font-weight: 500;
 }
 nav ul li a:hover{
-    color: #4876ef;
+    color: #91ADF2;
 }
 
 .container{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    background: #fff;
+    background: #f4f4f4;
     padding-top: 146px;
     padding-bottom: 90px;
 }
 
 .tablist{
+    width: 1200px;
+    margin: 0 auto;
     padding-top: 45px;
     text-align: center;
 }
@@ -179,9 +181,9 @@ nav ul li a:hover{
 .tablist ul li .btn_tab{
     padding: 7px 20px 6px;
     min-width: 90px;
-    border: 1px solid #bbb;
+    border: 1px solid #666;
     border-radius: 50px;
-    color: #333;
+    color: #666;
     font-size: 14px;
     background: #fff;
     cursor: pointer;
@@ -191,14 +193,18 @@ nav ul li a:hover{
     background: #eee;
 }
 .tablist ul li .btn_tab.on{
-    border-color: #4876ef;
+    border-color: #435070;
+    background-color: #435070;
     font-weight: bold;
-    color: #4876ef;
+    color: #fff;
 }
 .tablist ul li .btn_tab.on:hover{
     background: #e8eeff;
 }
-
+section{
+    width: 1200px;
+    margin: 0 auto;
+}
 .notice_box{
 
     margin-top: 25px;
@@ -209,22 +215,22 @@ table{
     border-spacing: 0px;
 }
 .notice_box tr{
-    border-top: 1px solid #eee;
+    border-top: 1px solid #f4f4f4;
 }
 .notice_box th{
     font-size: 15px;
-    color: #444;
+    color: #fff;
     letter-spacing: -0.04em;
     text-align: center;
     padding: 10px 0;
-    background: #e8eeff;
+    background: #e9e9e9;
     font-weight: 500;
     
 }
 .notice_box td{
     text-align: center;
     padding: 30px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f4f4f4;
 }
 .notice_box td:nth-child(1){
     padding: 20px 0;
@@ -287,8 +293,8 @@ table{
     border-radius: 0 5px 5px 0;
 }
 .paging ul li.active{
-    border-color: #4876ef;
-    background: #4876ef;
+    border-color: #435070;f;
+    background: #435070;;
 }
 .paging ul li.active a{
     color: #fff;
@@ -303,7 +309,7 @@ table{
 
 
 
-.sri_footer {display:block;clear:both;position:relative; bottom: 0; z-index:10;width:100%;}
+.sri_footer {display:block;clear:both;position:relative; bottom: 0; z-index:10;width:100%; }
 .sri_footer .wrap_award {border-top:#ededed 1px solid;background:#fff}
 .sri_footer .wrap_footer {min-width:1200px;border:solid #d7dce5;border-width:1px 0;background:#fcfdff; margin: 0 auto;}
 .sri_footer .award ul {margin:0 auto;width:1200px;font-size:0;text-align:center}
@@ -373,9 +379,9 @@ table{
 .modal_login_wrap, .modal_join_wrap {
     display: none;
     position: absolute;
-    top: 50%;
+    top: 16%;
     left: 50%;
-    transform: translate(-50%, 42%);
+    transform: translate(-50%, 0);
     width: 300px;
     height: auto;
     background: #fff;
@@ -626,4 +632,94 @@ input.login_check{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+
+
+/* ================기업메인====================================== */
+.resume_list{
+
+}
+.resume_form{
+    text-align: left;
+}
+.resume_form>ul>li:first-child{
+    border-top: 1px solid #eee;
+}
+.resume_form .resume_cont{
+    border-bottom: 1px solid #eee;
+    padding: 30px 30px 40px;
+    background: rgba(255, 255, 255, 1);
+}
+.list_title:hover span{
+    text-decoration: underline;
+    color: #91ADF2;
+}
+.resume_form .resume_cont .list_title{
+    max-width: 760px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #333;
+    padding-bottom: 10px;
+}
+.resume_form .resume_cont .list_title span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 760px;
+}
+.resume_form .resume_cont .list_option{
+    font-size: 0;
+}
+.resume_form .resume_cont .list_option li{
+    display: inline-block;
+    vertical-align: top;
+}
+.resume_form .resume_cont .list_option li span{
+
+    padding-left: 22px;
+}
+.resume_form .resume_cont .list_option .career{
+    width: 25%;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.resume_form .resume_cont .list_option .career::before{
+    content: "";
+    display: block;
+    background: url("/img/icon_career.svg") no-repeat center center;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+}
+.resume_form .resume_cont .list_option .part{
+    width: 25%;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.resume_form .resume_cont .list_option .part::before{
+    content: "";
+    display: block;
+    background: url("/img/icon_part.svg") no-repeat center center;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 18px;
+    height: 18px;
 }

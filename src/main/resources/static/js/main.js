@@ -1,11 +1,11 @@
-$("nav ul li").click(function () {
-  $("nav ul li").removeClass("on");
-});
-
-$(".tablist ul li").click(function () {
+$(".tablist ul li").click(() => {
   $(".tablist ul li button").removeClass("on");
   $(this).addClass("on");
 });
+/* $("nav li").click(function () {
+  $("nav li a").removeClass("nav_black");
+  $("nav li a").addClass("nav_blue");
+}); */
 
 $("#btnDelete").click(() => {
   DeletestadiumList();
@@ -93,6 +93,37 @@ function popOpen2() {
   $(modalBg).show();
 }
 function popClose2() {
+  let modalPop = $(".modal_join_wrap");
+  let modalBg = $(".modal_join_bg");
+
+  $(modalPop).hide();
+  $(modalBg).hide();
+}
+
+/* 기업서비스 */
+function popOpenCompany() {
+  let modalPop = $(".modal_login_wrap");
+  let modalBg = $(".modal_login_bg");
+
+  $(modalPop).show();
+  $(modalBg).show();
+}
+function popCloseCompany() {
+  let modalPop = $(".modal_login_wrap");
+  let modalBg = $(".modal_login_bg");
+
+  $(modalPop).hide();
+  $(modalBg).hide();
+}
+
+function popOpenCompany2() {
+  let modalPop = $(".modal_join_wrap");
+  let modalBg = $(".modal_join_bg");
+
+  $(modalPop).show();
+  $(modalBg).show();
+}
+function popCloseCompany2() {
   let modalPop = $(".modal_join_wrap");
   let modalBg = $(".modal_join_bg");
 

@@ -12,7 +12,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/company.css" />
     <script type="text/javascript" src="/js/main.js"></script>
     <script
       type="text/javascript"
@@ -26,7 +26,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       <div class="header_wrap">
         <header>
           <div class="logo">
-            <a href="#">PROJECT_4</a>
+            <a href="/mainCompany">COMPANY_4</a>
           </div>
           <!-- .logo -->
 
@@ -49,7 +49,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
             <button
               class="btn_login"
               type="button"
-              onClick="javascript:popOpen();"
+              onClick="javascript:popOpenCompany();"
             >
               로그인
             </button>
@@ -57,11 +57,11 @@ uri="http://java.sun.com/jsp/jstl/core"%>
             <button
               class="btn_join"
               type="button"
-              onClick="javascript:popOpen2();"
+              onClick="javascript:popOpenCompany2();"
             >
               회원가입
             </button>
-            <a href="/mainCompany" class="btn_company">기업 서비스</a
+            <a href="/main" class="btn_company">회원 서비스</a
             ><!-- .btn_company -->
           </div>
           <!-- .login_box -->
@@ -69,16 +69,16 @@ uri="http://java.sun.com/jsp/jstl/core"%>
           <nav>
             <ul>
               <li>
-                <a href="/main" class="nav_blue">채용공고</a>
+                <a href="/mainCompany" class="nav_blue">인재검색</a>
               </li>
               <li>
-                <a href="/matching">매칭리스트</a>
+                <a href="">공고등록</a>
               </li>
               <li>
-                <a href="/subscription">구독기업공고</a>
+                <a href="">공고/지원자관리</a>
               </li>
               <li>
-                <a href="/companyList">기업정보</a>
+                <a href="">매칭리스트</a>
               </li>
             </ul>
           </nav>
@@ -88,7 +88,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       </div>
       <!-- .header_wrap -->
 
-      <div class="modal_login_bg" onClick="javascript:popClose();"></div>
+      <div class="modal_login_bg" onClick="javascript:popCloseCompany();"></div>
       <div class="modal_login_wrap">
         <h2>로그인</h2>
         <div class="form_box">
@@ -123,7 +123,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
         </div>
       </div>
 
-      <div class="modal_join_bg" onClick="javascript:popClose2();"></div>
+      <div class="modal_join_bg" onClick="javascript:popCloseCompany2();"></div>
       <div class="modal_join_wrap">
         <h2>회원가입</h2>
         <div class="form_box cf">
@@ -187,59 +187,59 @@ uri="http://java.sun.com/jsp/jstl/core"%>
                 </span>
               </div>
 
-              <div class="user_info">
-                <div class="join_name join_box">
+              <div class="company_info">
+                <div class="join_number join_box">
                   <h3>
-                    <label for="u_name">이름</label>
+                    <label for="c_number">사업자등록번호</label>
                   </h3>
                   <span>
                     <input
-                      id="u_name"
+                      id="c_number"
                       type="text"
-                      placeholder="이름을 입력하세요."
-                      name="userName"
-                      maxlength="10"
+                      placeholder="사업자번호를 입력하세요."
+                      name="companyNumber"
+                      maxlength="30"
                     />
                   </span>
                 </div>
                 <div class="join_birth join_box">
                   <h3>
-                    <label for="u_birth">생년월일</label>
+                    <label for="c_birth">생년월일</label>
                   </h3>
                   <span>
                     <input
-                      id="u_birth"
+                      id="c_birth"
                       type="date"
                       placeholder="생년월일을 입력하세요."
-                      name="userBirth"
+                      name="companyBirth"
                       maxlength="40"
                     />
                   </span>
                 </div>
                 <div class="join_phone join_box">
                   <h3>
-                    <label for="u_phone">휴대폰번호</label>
+                    <label for="c_phone">휴대폰번호</label>
                   </h3>
                   <span>
                     <input
-                      id="u_phone"
+                      id="c_phone"
                       type="tel"
                       placeholder="휴대폰번호를 입력하세요."
-                      name="userPhone"
+                      name="companyPhone"
                       maxlength="40"
                     />
                   </span>
                 </div>
                 <div class="join_adress join_box">
                   <h3>
-                    <label for="u_adress">주소</label>
+                    <label for="c_adress">주소</label>
                   </h3>
                   <span>
                     <input
-                      id="u_adress"
+                      id="c_adress"
                       type="text"
                       placeholder="주소를 입력하세요."
-                      name="userAdress"
+                      name="companyAdress"
                       maxlength="100"
                     />
                   </span>
