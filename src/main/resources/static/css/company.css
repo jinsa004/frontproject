@@ -199,7 +199,7 @@ nav ul li a:hover{
     color: #fff;
 }
 .tablist ul li .btn_tab.on:hover{
-    background: #e8eeff;
+    background: #4876ef;
 }
 section{
     width: 1200px;
@@ -643,17 +643,25 @@ input.login_check{
 .resume_form{
     text-align: left;
 }
-.resume_form>ul>li:first-child{
+/* .resume_form>ul>li:first-child{
     border-top: 1px solid #eee;
-}
+} */
 .resume_form .resume_cont{
-    border-bottom: 1px solid #eee;
-    padding: 30px 30px 40px;
+    /* border-bottom: 1px solid #eee; */
+    padding: 30px 30px 35px;
     background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px #eee;
+    border: 1px solid #fff;
+    transition: all 0.4s;
+}
+.resume_form .resume_cont:hover{
+    border: 1px solid #91ADF2;
 }
 .list_title:hover span{
     text-decoration: underline;
-    color: #91ADF2;
+    color: #435070;
 }
 .resume_form .resume_cont .list_title{
     max-width: 760px;
@@ -661,7 +669,7 @@ input.login_check{
     font-weight: 600;
     line-height: 40px;
     color: #333;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .resume_form .resume_cont .list_title span{
     text-overflow: ellipsis;
