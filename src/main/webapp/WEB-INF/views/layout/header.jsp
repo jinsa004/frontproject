@@ -13,6 +13,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
     />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>header</title>
   </head>
@@ -63,17 +64,17 @@ uri="http://java.sun.com/jsp/jstl/core"%>
 
           <nav>
             <ul>
-              <li>
-                <a href="/main" class="on">채용공고</a>
+              <li class="on">
+                <a href="/main" target="_parent">채용공고</a>
               </li>
               <li>
-                <a href="/matching">매칭리스트</a>
+                <a href="/matching" target="_parent">매칭리스트</a>
               </li>
               <li>
-                <a href="/subscription">구독기업공고</a>
+                <a href="/subscription" target="_parent">구독기업공고</a>
               </li>
               <li>
-                <a href="#">기업정보</a>
+                <a href="/companyList" target="_parent">기업정보</a>
               </li>
             </ul>
           </nav>

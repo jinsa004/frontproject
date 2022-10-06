@@ -5,6 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class TestController {
+    @GetMapping("/companyList")
+    public String companyList() {
+        return "user/companyList";
+    }
 
     @GetMapping("/subscription")
     public String subscriptionList() {

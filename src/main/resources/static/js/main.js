@@ -1,12 +1,10 @@
-$(document).ready(function () {
-  $("nav ul li").click(function () {
-    $("nav ul li a").removeClass("on");
-    $(this).addClass("on");
-  });
-  $(".tablist ul li").click(function () {
-    $(".tablist ul li button").removeClass("on");
-    $(this).addClass("on");
-  });
+$("nav ul li").click(function () {
+  $("nav ul li").removeClass("on");
+});
+
+$(".tablist ul li").click(function () {
+  $(".tablist ul li button").removeClass("on");
+  $(this).addClass("on");
 });
 
 $("#btnDelete").click(() => {

@@ -4,7 +4,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
 <div id="user_wrap">
   <div class="container">
     <div class="matching_list">
-      <!-- <a href="#" class="btn_matching_insert"> 관심 분야 수정</a> -->
+      <a href="#" class="btn_matching_insert">구독기업공고 관리</a>
     </div>
     <!-- .tablist -->
 
