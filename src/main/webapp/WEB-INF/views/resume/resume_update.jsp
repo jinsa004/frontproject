@@ -67,7 +67,7 @@
       width: 300px;
       text-align: left;
     }
-    .resume_form{
+    .users_form{
       width: 700px;
       float: right;
     }
@@ -506,16 +506,16 @@
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">인재 검색</a>
+        <a class="nav-link" href="#">채용 공고</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">공고등록</a>
+        <a class="nav-link" href="#">매칭 리스트</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">공고/지원자 관리</a>
+        <a class="nav-link active" href="#">구독 기업 공고</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">매칭리스트</a>
+        <a class="nav-link" href="#">기업정보</a>
       </li>
     </ul>
   </div>

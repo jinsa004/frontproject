@@ -67,17 +67,17 @@
       width: 300px;
       text-align: left;
     }
-    .users_form{
+    .company_form{
       width: 700px;
       float: right;
     }
     /* 전체 */
 
-    .menu .employ_list{
+    .menu .company_list{
       margin: 0 auto;
       width: 240px;
     }
-    .menu .employ_list .employ_list_item{
+    .menu .company_list .company_list_item{
       margin-top: 30px;
       position: relative;
       display: block;
@@ -86,23 +86,9 @@
       font-size: 20px;
       line-height: 44px;
     }
-    .menu .employ_list .resume_list{
-      margin: 0 auto;
-      width: 240px;
-      height: 90px;
-    }
-    .menu .employ_list .resume_list .resume_list_item{
-      margin: 10px 0;
-      position: relative;
-      display: block;
-      height: 30px;
-      box-sizing: border-box;
-      font-size: 15px;
-      line-height: 44px;
-    }
     /* menu */
 
-    .users_form{
+    .company_form{
       background-color: antiquewhite;
     }
 
@@ -295,33 +281,6 @@
     }
     /* login */
 
-    #field_info{
-      position: relative;
-      padding: 34px 50px 35px;
-      background-color: #fbfbfb;
-    }
-    #field_info .form_title{
-      position: relative;
-      padding-bottom: 15px;
-      min-height: 33px;
-    }
-    #field_info .form_title h2.title{
-      float: left;
-      color: #222;
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      line-height: 34px;
-    }
-    #field_info .field_select{
-      padding: 50px 70px;
-      border-bottom: 1px solid #ebebeb;
-    }
-    #field_info .field_select form{}
-    #field_info .field_select form .form-check{}
-    #field_info .field_select form .form-check .form-check-input{}
-    /* field */
-
     .btn_group{}
     .btn_group .update_btn{
       margin-top: 15px;
@@ -353,23 +312,23 @@
 <body>
 
 <div class="p-5 border text-center">
-  <h1>회원 정보 관리</h1>
+  <h1>기업 정보 관리</h1>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">채용 공고</a>
+        <a class="nav-link" href="#">인재 검색</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">매칭 리스트</a>
+        <a class="nav-link" href="#">공고등록</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">구독 기업 공고</a>
+        <a class="nav-link active" href="#">공고/지원자 관리</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">기업정보</a>
+        <a class="nav-link" href="#">매칭리스트</a>
       </li>
     </ul>
   </div>
@@ -379,28 +338,23 @@
 <div class="container">
   <div class="row">
     <div class="menu">
-      <div class="employ_list">
+      <div class="company_list">
         <ul>
-          <li class="employ_list_item">
-            <a href="#">이력서 관리</a>
+          <li class="company_list_item">
+            <a href="#">기업 소개</a>
           </li>
-            <ul class="resume_list">
-              <li class="resume_list_item">
-                <a href="#">이력서 등록</a>
-              </li>
-              <li class="resume_list_item">
-                <a href="#">이력서 관리</a>
-              </li>
-          </ul>
-          <li class="employ_list_item">
-            <a href="#">회원정보 관리</a>
+          <li class="company_list_item">
+            <a href="#">공고 관리</a>
+          </li>
+          <li class="company_list_item">
+            <a href="#">회원 정보 관리</a>
           </li>
         </ul>
       </div>
     </div>
     <!-- menu -->
 
-    <div class="users_form">
+    <div class="company_form">
 
       <div id="basic_info" class="form">
         <div class="form_title">
@@ -415,12 +369,12 @@
             </form>
           </div>
           <dl class="info_basic">
-            <dt class="info_list_item">이름</dt>
-            <input type="text" id="user_name" name="user_name" class="box_input" value="홍길동" placeholder="이름을 입력하세요"/>
-            <dt class="info_list_item">생년월일</dt>
-            <input type="text" id="user_birth" name="user_birth" class="box_input" value="2000년 00월 00일" placeholder="생년월일을 입력하세요"/>
-            <dt class="info_list_item">성별</dt>
-            <input type="text" id="user_sex" name="user_sex" class="box_input" value="남성" placeholder="셩별을 입력하세요"/>
+            <dt class="info_list_item">회사명</dt>
+            <input type="text" id="company_name" name="company_name" class="box_input" value="그린" placeholder="회사명을 입력하세요"/>
+            <dt class="info_list_item">사업자번호</dt>
+            <input type="text" id="company_number" name="company_number" class="box_input" value="1231312-123123" placeholder="사업자번호를 입력하세요"/>
+            <dt class="info_list_item">설립년도</dt>
+            <input type="text" id="company_birth" name="company_birth" class="box_input" value="2022년 10월 07일" placeholder="설립년도를 입력하세요"/>
           </dl>
         </div>
       </div>
@@ -428,15 +382,15 @@
 
       <div id="contact_info" class="form">
         <div class="form_title">
-          <h2 class="title">연락처 정보</h2>
+          <h2 class="title">담당자 연락처</h2>
         </div>
         <div class="contact_form">
           <dl class="info_contact">
             <dt class="info_list_item">휴대폰</dt>
-            <input type="text" id="user_tel" name="user_tel" class="box_input" value="010-0000-0000" placeholder="휴대폰 번호을 입력하세요"/>
+            <input type="text" id="company_tel" name="company_tel" class="box_input" value="010-0000-0000" placeholder="휴대폰 번호을 입력하세요"/>
             <dt class="info_list_item">이메일</dt>
-            <input type="text" id="user_email" name="user_email" class="box_input" value="green@nate.com" placeholder="이메일을 입력하세요"/>
-            <dt class="info_list_item">주소</dt>
+            <input type="text" id="company_email" name="company_email" class="box_input" value="green@nate.com" placeholder="이메일을 입력하세요"/>
+            <dt class="info_list_item">기업 주소</dt>
             <div class="select-group">
               <select>
                 <option>부산</option>
@@ -445,7 +399,7 @@
                 <option>2</option>
               </select>
             </div>
-            <input type="text" id="user_location" name="user_location" class="box_input" value="부산 금정구" placeholder="상세주소를 입력하세요"/>
+            <input type="text" id="company_location" name="company_location" class="box_input" value="금정구" placeholder="상세주소를 입력하세요"/>
           </dl>
         </div>
       </div>
@@ -458,44 +412,13 @@
         <div class="login_form">
         <dl class="info_login">
           <dt class="info_list_item">ID</dt>
-          <input type="text" id="user_id" name="user_id" class="box_input" value="ssar" placeholder="아이디를 입력하세요"/>
+          <input type="text" id="company_id" name="company_id" class="box_input" value="ssar" placeholder="아이디를 입력하세요"/>
           <dt class="info_list_item">Password</dt>
-          <input type="text" id="user_password" name="user_password" class="box_input" value="1234" placeholder="비밀번호를 입력하세요"/>
+          <input type="text" id="company_password" name="company_password" class="box_input" value="1234" placeholder="비밀번호를 입력하세요"/>
         </dl>
         </div>
       </div>
       <!-- login -->
-
-      <div id="field_info" class="form">
-        <div class="form_title">
-          <h2 class="title">관심분야</h2>
-        </div>
-        <div class="field_select">
-            <form method="post" action="/#">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="프론트엔드" name="프론트엔드" value="프론트엔드">
-                <label class="form-check-label" for="프론트엔드">프론트엔드</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="백엔드" name="백엔드" value="백엔드">
-                <label class="form-check-label" for="백엔드">백엔드</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="풀스택" name="풀스택" value="풀스택">
-                <label class="form-check-label" for="풀스택">풀스택</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="안드로이드" name="안드로이드" value="안드로이드">
-                <label class="form-check-label" for="chec안드로이드k1">안드로이드</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="IOS" name="IOS" value="IOS">
-                <label class="form-check-label" for="IOS">IOS</label>
-              </div>
-            </form>
-        </div>
-      </div>
-      <!-- field -->
 
       <div class="btn_group">
         <div class="update_btn">
