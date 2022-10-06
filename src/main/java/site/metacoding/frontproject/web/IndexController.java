@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 @Controller
-public class UsersController {
+public class IndexController {
 
     @GetMapping("/onclick")
     public String resume_detail2() {
@@ -20,7 +20,7 @@ public class UsersController {
     }
 
     @GetMapping("/upload")
-    public String users() {
+    public String upload() {
         return "upload";
     }
 

@@ -8,7 +8,7 @@ public class ResumeController {
 
     @GetMapping("/resume_update")
     public String resume_udpatel() {
-        return "resume/resume_update_univ";
+        return "resume/resume_update";
     }
 
     @GetMapping("/resume_detail")
