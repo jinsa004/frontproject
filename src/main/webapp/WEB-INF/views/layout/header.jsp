@@ -63,14 +63,14 @@ uri="http://java.sun.com/jsp/jstl/core"%>
 
           <nav>
             <ul>
-              <li class="on">
-                <a href="#">채용공고</a>
+              <li>
+                <a href="/main" class="on">채용공고</a>
               </li>
               <li>
-                <a href="#">매칭리스트</a>
+                <a href="/matching">매칭리스트</a>
               </li>
               <li>
-                <a href="#">구독기업광고</a>
+                <a href="#">구독기업공고</a>
               </li>
               <li>
                 <a href="#">기업정보</a>

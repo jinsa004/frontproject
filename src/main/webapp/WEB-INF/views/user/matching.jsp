@@ -3,27 +3,8 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
 
 <div id="user_wrap">
   <div class="container">
-    <div class="tablist">
-      <ul>
-        <li>
-          <button class="btn_tab" type="button">전체직군</button>
-        </li>
-        <li>
-          <button class="btn_tab on" type="button">프론트엔드</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">백엔드</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">웹 풀스택</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">안드로이드</button>
-        </li>
-        <li>
-          <button class="btn_tab" type="button">IOS</button>
-        </li>
-      </ul>
+    <div class="matching_list">
+      <a href="#" class="btn_matching_insert"> 관심 분야 수정</a>
     </div>
     <!-- .tablist -->
 
