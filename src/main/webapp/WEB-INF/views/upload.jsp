@@ -11,7 +11,7 @@
 <br/><br/><br/>
 
 <h1>사진</h1>
-<form method="post" action="/upload" enctype="multipart/form-data">
+<form method="post" action="/resume_detail" enctype="multipart/form-data">
 <input type="file" name="file"/>
 <button type="submit">파일전송</button>
 </form>

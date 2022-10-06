@@ -10,16 +10,49 @@
 
   <style>
     body{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      line-height: 1;
+      font-family: "Malgun Gothic",dotum,gulim,sans-serif;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover{
+      color: inherit;
+    }
+    input:focus{
+      outline: none;
+    }
+    button{
+      background: none;
+      color: inherit;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+    }
+    /* 기초세팅 */
+
+    body{
       width: 1600px;
       margin: 0 auto;
       align-items: center;
-      padding: 0;
-      font-family: "Malgun Gothic",dotum,gulim,sans-serif;
     }
     .container{
       width: 1200px;
       background-color: azure;
-      display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
@@ -255,7 +288,7 @@
       line-height: 28px;
       padding-bottom: 30px;
     }
-    .edu_row{
+    .career_row{
       position: relative;
       padding: 0 49px 25px;
       display: block;

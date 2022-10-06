@@ -142,13 +142,13 @@
 
           <div class="edu_select">
             <div class="btn-group">
-              <button type="button" class="edu_btn" onclick="show_highschool()">고등학교 졸업</button>
-              <button type="button" class="edu_btn" onclick="show_univ()">대학.대학원 이상 졸업</button>
+              <button type="button" class="edu_btn" id="high_btn" onclick="show_highschool()">고등학교 졸업</button>
+              <button type="button" class="edu_btn" id="univ_btn" onclick="show_univ()">대학.대학원 이상 졸업</button>
             </div>
           </div>
 
           <div class="edu_form" id="univ">
-            <h4>대학.대학원 정보 입력</h4>
+            <h4>고등학교 정보 입력</h4>
             <div class="edu_row">
               <div class="edu_list">
                 <p class="edu_list_item">대학</p>
@@ -188,8 +188,10 @@ function show_highschool(){
     if(con1.style.display=='none'){ 		
     	con1.style.display = 'block';
       con2.style.display = 'none';
+      document.getElementById("button").style.background='#000000';
     }else{ 		
-    	con1.style.display = 'none'; 	
+    	con1.style.display = 'none';
+      document.getElementById("button").style.background='#000000';
     } 
 }
 
