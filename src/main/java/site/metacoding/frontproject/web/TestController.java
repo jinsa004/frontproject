@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class TestController {
 
+    @GetMapping("/mypageInsertForm")
+    public String mypageResumeInsert() {
+        return "user/mypageInsertForm";
+    }
+
     @GetMapping("/recruitDetail")
     public String recruitDetail() {
         return "user/recruitDetail";
