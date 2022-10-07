@@ -27,7 +27,7 @@ public class ImageService {
         // save할 반환 파일 띄우기
         ImageDto imageDto = new ImageDto();
 
-        String absolutePath = new File("resource/static/images/").getAbsolutePath();
+        String absolutePath = new File("resources/static/images/").getAbsolutePath();
 
         File file = new File(absolutePath);
         // 저장할 위치의 디렉토리가 존재하지 않을 경우
@@ -58,7 +58,7 @@ public class ImageService {
             String newImageName = Long.toString(System.nanoTime()) + originalImageExtension;
 
             // DTO에 담기
-            imageDto = imageDto.builder()
+            imageDto = ImageDto.builder()
                     .originImageName(image.getOriginalFilename())
                     .newImageName(newImageName)
                     .imagePath(absolutePath)

@@ -3,7 +3,7 @@
 <mapper namespace="site.metacoding.frontproject.domain.Image.ImageDao">
 
     <insert id="save">
-        INSERT INTO image(origin_image_name, newimage_name, image_path)
+        INSERT INTO image(origin_image_name, new_image_name, image_path)
 		VALUES(#{originImageName}, #{newImageName}, #{imagePath})
     </insert>
 
