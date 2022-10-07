@@ -107,6 +107,39 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
         </button>
       </div>
       <!-- .btn_recruit_insert -->
+
+      <div
+        class="modal_select_bg"
+        onClick="javascript:popCloseRecruit();"
+      ></div>
+      <div class="modal_select_wrap">
+        <h2>지원할 이력서를 선택하세요</h2>
+        <div class="form_box">
+          <ul>
+            <li class="resume_select_cont">
+              <span class="input_radio">
+                <input
+                  type="radio"
+                  name="resume_select"
+                  id="resume_select"
+                  value=""
+                />
+              </span>
+              <label for="resume_select" class="resume_select_box">
+                <span class="tit"
+                  >최상의 결과를 이끌어 낼 4조 개발자들 화이팅</span
+                >
+                <span class="career">신입</span>
+                <span class="part">프론트엔드, 백엔드, 풀스택</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button id="btn_recruit" type="button" class="btn btn-primary">
+          지원하기
+        </button>
+      </div>
+      <!-- .modal_select_wrap -->
       <!-- .recruit_detail_box -->
     </div>
     <!-- .container -->
