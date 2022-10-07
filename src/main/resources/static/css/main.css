@@ -1,0 +1,2076 @@
+@charset "utf-8";
+
+body{
+  width: 1600px;
+  background-color: #fff;
+  margin: 0 auto;
+  align-items: center;
+}
+.container{
+  width: 1200px;
+  background-color: antiquewhite;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+.row{
+  width: 1200px;
+  background-color: aliceblue;
+  padding-top: 80px;
+}
+.menu{
+  float: left;
+  width: 300px;
+  text-align: left;
+  margin-bottom: 1300px;
+}
+/* 전체 */
+
+/* users_info 시작 */
+
+.users_info{
+  width: 800px;
+  float: right;
+}
+/* 전체 */
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.menu .employ_list{
+  margin: 0 auto;
+  width: 240px;
+}
+.menu .employ_list .employ_list_item{
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  height: 44px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 44px;
+}
+.menu .employ_list .resume_list{
+  margin: 0 auto;
+  width: 240px;
+  height: 90px;
+}
+.menu .employ_list .resume_list .resume_list_item{
+  margin: 10px 0;
+  position: relative;
+  display: block;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 44px;
+}
+/* menu */
+
+.users_info{
+  background-color: antiquewhite;
+}
+.users_info #basic_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.users_info #basic_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.users_info #basic_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.users_info #basic_info .basic_form .info_img{
+  float: left;
+  position: relative;
+  padding: 9px;
+  margin-right: 28px;
+  width: 120px;
+  height: 160px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+.users_info #basic_info .basic_form .info_img form{
+  margin: 10px;
+}
+.users_info #basic_info .basic_form .info_img form label{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+.users_info #basic_info .basic_form .info_img form input{
+  margin-bottom: 50px;
+}
+.users_info #basic_info .basic_form .info_img form input.hidden{
+  visibility: hidden;
+}
+.users_info #basic_info .basic_form .info_img button{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+.users_info #basic_info .basic_form .info_basic{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow: hidden;
+}
+.users_info #basic_info .basic_form .info_basic dt{
+  float: left;
+  margin-top: 12px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444;
+  letter-spacing: -1px;
+  display: block;
+}
+.users_info #basic_info .basic_form .info_basic .box_input{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+/* basic */
+
+.users_info #contact_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.users_info #contact_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.users_info #contact_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.users_info #contact_info .contact_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.users_info #contact_info .contact_form .contact_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.users_info #contact_info .contact_form .contact_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.users_info #contact_info .contact_form .contact_row .contact_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.users_info #contact_info .contact_form .contact_row .contact_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.users_info #contact_info .contact_form .contact_row .contact_input #user_location{
+  width: 300px;
+}
+.users_info #contact_info .contact_form .contact_row .contact_input .box_input{
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+/* contact */
+
+.users_info #login_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.users_info #login_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.users_info #login_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.users_info #login_info .login_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.users_info #login_info .login_form .login_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.users_info #login_info .login_form .login_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.users_info #login_info .login_form .login_row .login_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.users_info #login_info .login_form .login_row .edu_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.users_info #login_info .login_form .login_row .edu_input .box_input{
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+/* login */
+
+.users_info #field_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.users_info #field_info .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+.users_info #field_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.users_info #field_info .field_select{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 40px 0 0 10px;
+  overflow: hidden;
+}
+.users_info #field_info .field_select form{
+  float: left;
+  width: 120px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #444;
+  letter-spacing: -1px;
+  display: block;
+}
+.users_info #field_info .field_select form .form-check{
+  margin-bottom: 10px;
+}
+.users_info #field_info .field_select form .form-check .form-check-input{}
+/* field */
+
+.users_info .btn_group{
+  float: right;
+}
+.users_info .btn_group .update_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.users_info .btn_group .delete_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.users_info .btn_group button{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+  margin-top: 3px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 56px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* update_btn */
+/* users_info 끝 */
+
+/* resume_update 시작 */
+
+.resume_update{
+  width: 800px;
+  float: right;
+}
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.menu .employ_list{
+  margin: 0 auto;
+  width: 240px;
+}
+.menu .employ_list .employ_list_item{
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  height: 44px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 44px;
+}
+.menu .employ_list .resume_list{
+  margin: 0 auto;
+  width: 240px;
+  height: 90px;
+}
+.menu .employ_list .resume_list .resume_list_item{
+  margin: 10px 0;
+  position: relative;
+  display: block;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 44px;
+}
+/* menu */
+.resume_update{
+  background-color: antiquewhite;
+}
+.resume_update .resume_title{
+  margin: 40px 0 60px;
+}
+.resume_update .resume_title h2{
+  margin-bottom: 20px;
+}
+.resume_update .resume_title .title_update{
+  width: 100%;
+  height: 60px;
+  border: 2px solid #555;
+  box-sizing: border-box;
+  letter-spacing: -1px;
+  background-color: #fff;
+}
+.resume_update .resume_title .title_update .title_input{
+  padding: 16px 30px;
+  height: 56px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+}
+.resume_update .resume_title .title_update .title_input .resume_title_input{
+  width: 100%;
+  height: 24px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  line-height: 22px;
+}
+/* title */
+
+.resume_update #info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+
+.resume_update #info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.resume_update #info .info_form .info_img{
+  float: left;
+  position: relative;
+  padding: 9px;
+  margin-right: 28px;
+  width: 120px;
+  height: 160px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+.resume_update #info .info_form .info_img form{
+  margin: 10px;
+}
+.resume_update #info .info_form .info_img form label{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+.resume_update #info .info_form .info_img form input{
+  margin-bottom: 50px;
+}
+.resume_update #info .info_form .info_img form input.hidden{
+  visibility: hidden;
+}
+.resume_update #info .info_form .info_img button{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+.resume_update #info .info_name{
+  margin-bottom: 9px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow: hidden;
+}
+.resume_update #info .info_name dd.name{
+  display: inline-block;
+  margin: 3px 6px 0 0;
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: -2px;
+}
+.resume_update #info .info_name dd.sex{
+  display: inline-block;
+}
+.resume_update #info .info_basic{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow: hidden;
+}
+.resume_update #info .info_basic dt{
+  float: left;
+  margin-top: 12px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444;
+  letter-spacing: -1px;
+  display: block;
+}
+.resume_update #info .info_basic .box_input{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+/* info */
+
+.resume_update #edu{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.resume_update #edu .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+  display: block;
+  overflow: hidden;
+}
+.resume_update #edu .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+  margin: 3px 6px 0 0;
+}
+.resume_update #edu .form_title span{
+  margin: 15px 0 0 10px;
+  display: inline-block;
+}
+.resume_update #edu .resume_edu .edu_select{
+  padding: 50px 70px;
+  border-bottom: 1px solid #ebebeb;
+}
+.resume_update #edu .resume_edu .edu_select .btn-group{
+  justify-content: space-between;
+  align-items: center;
+}
+.resume_update #edu .resume_edu .edu_select .btn-group button{
+  border: 1px solid #ddd;
+  background-color: #fff;
+  size: 10px;
+  width: 200px;
+  height: 55px;
+}
+.resume_update #edu .resume_edu .edu_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: none;
+}
+.resume_update #edu .resume_edu .edu_form h4{
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+.resume_update #edu .resume_edu .edu_form .edu_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.resume_update #edu .resume_edu .edu_form .edu_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.resume_update #edu .resume_edu .edu_form .edu_row .edu_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.resume_update #edu .resume_edu .edu_form .edu_row .edu_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.resume_update #edu .resume_edu .edu_form .edu_row .edu_input .box_input{
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+.resume_update #edu .resume_edu .edu_form .edu_row .edu_input #start_date{ 
+}
+
+.resume_update #edu .resume_edu .edu_form .edu_row .edu_input #end_date{
+}
+
+/* edu */
+
+.resume_update #career{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.resume_update #career .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+.resume_update #career .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.resume_update #career .resume_career .career_select{
+  padding: 50px 70px;
+  border-bottom: 1px solid #ebebeb;
+}
+.resume_update #career .resume_career .career_select .btn-group{
+  justify-content: space-between;
+  align-items: center;
+}
+.resume_update #career .resume_career .career_select .btn-group button{
+  border: 1px solid #ddd;
+  background-color: #fff;
+  size: 10px;
+  width: 200px;
+  height: 55px;
+}
+.resume_update #career .resume_career .career_select .btn-group #checked{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+}
+.resume_update #career .resume_career .career_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: none;
+}
+.resume_update #career .resume_career .career_form h4{
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+.resume_update #career .resume_career .career_form .career_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.resume_update #career .resume_career .career_form .career_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.resume_update #career .resume_career .career_form .career_row .career_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.resume_update #career .resume_career .career_form .career_row .career_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.resume_update #career .resume_career .career_form .career_row .career_input .box_input{
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+
+.resume_update #career .resume_career .career_form .career_row .career_input #start_date{ 
+}
+
+.resume_update #career .resume_career .career_form .career_row .career_input #end_date{
+}
+/* career */
+
+.resume_update #field{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.resume_update #field .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+.resume_update #field .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.resume_update #field .field_select{
+  padding: 50px 70px;
+  border-bottom: 1px solid #ebebeb;
+}
+.resume_update #field .resume_field .field_select .select-group{
+  justify-content: space-between;
+  align-items: center;
+}
+/* field */
+
+.resume_update .update_btn{
+  margin-top: 15px;
+  width: 260px;
+  display: block;
+  float: right;
+}
+.resume_update .update_btn button{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+  margin-top: 3px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 56px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* update_btn */
+/* resume_update 끝 */
+
+/* resume_detail 시작 */
+
+.resume_detail{
+  background-color: antiquewhite;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.resume_detail #info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.resume_detail #info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.resume_detail #info .info_form .info_img{
+  float: left;
+  position: relative;
+  padding: 9px;
+  margin-right: 28px;
+  width: 120px;
+  height: 160px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+.resume_detail #info .info_name{
+  margin-bottom: 9px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow: hidden;
+}
+.resume_detail #info .info_name dd.name{
+  display: inline-block;
+  margin: 3px 6px 0 0;
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: -2px;
+}
+.resume_detail #info .info_name dd.sex{
+  display: inline-block;
+}
+.resume_detail #info .info_basic{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow: hidden;
+}
+.resume_detail #info .info_basic dt{
+  float: left;
+  margin-top: 12px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444;
+  letter-spacing: -1px;
+  display: block;
+}
+.resume_detail #info .info_basic dd{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444;
+  margin-inline-start: 40px;
+}
+/* info */
+
+.resume_detail #edu{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.resume_detail #edu .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+.resume_detail #edu .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.resume_detail #edu .resume_edu .edu_select{
+  padding: 50px 70px;
+  border-bottom: 1px solid #ebebeb;
+}
+.resume_detail #edu .resume_edu .edu_select .btn-group{
+  justify-content: space-between;
+  align-items: center;
+}
+.resume_detail #edu .resume_edu .edu_select .btn-group button{
+  border: 1px solid #ddd;
+  background-color: #fff;
+  size: 10px;
+  width: 200px;
+  height: 55px;
+}
+.resume_detail #edu .resume_edu .edu_select .btn-group #checked{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+}
+.resume_detail #edu .resume_edu .edu_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.resume_detail #edu .resume_edu .edu_form h4{
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+.resume_detail #edu .resume_edu .edu_form .edu_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.resume_detail #edu .resume_edu .edu_form .edu_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.resume_detail #edu .resume_edu .edu_form .edu_row .edu_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.resume_detail #edu .resume_edu .edu_form .edu_row .edu_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+/* edu */
+
+.resume_detail #career{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.resume_detail #career .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+.resume_detail #career .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.resume_detail #career .resume_career .career_select{
+  padding: 50px 70px;
+  border-bottom: 1px solid #ebebeb;
+}
+.resume_detail #career .resume_career .career_select .btn-group{
+  justify-content: space-between;
+  align-items: center;
+}
+.resume_detail #career .resume_career .career_select .btn-group button{
+  border: 1px solid #ddd;
+  background-color: #fff;
+  size: 10px;
+  width: 200px;
+  height: 55px;
+}
+.resume_detail #career .resume_career .career_select .btn-group #checked{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+}
+.resume_detail #career .resume_career .career_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.resume_detail #career .resume_career .career_form h4{
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+.resume_detail #career .resume_career .career_form .career_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.resume_detail #career .resume_career .career_form .career_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.resume_detail #career .resume_career .career_form .career_row .career_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.resume_detail #career .resume_career .career_form .career_row .career_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+/* career */
+
+.resume_detail .contact_btn{
+  margin-top: 15px;
+  width: 260px;
+  display: block;
+  float: right;
+}
+.resume_detail .contact_btn button{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+  margin-top: 3px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 56px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* contact_btn */
+/* resume_detail 끝 */
+
+/* notice_update 시작 */
+
+.notice_update{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.notice_update{
+  background-color: antiquewhite;
+}
+.notice_update #notice_info{
+  position: relative;
+  padding: 34px 20px 35px 50px;
+  background-color: #fbfbfb;
+}
+.notice_update #notice_info .notice_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.notice_update #notice_info .notice_form .notice_row{
+  position: relative;
+  padding: 0 30px 25px;
+  display: block;
+}
+.notice_update #notice_info .notice_form .notice_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_list{
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_list{
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+
+.notice_update #notice_info .notice_form .notice_row .notice_input .box_input{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  width: 500px;
+  height: 40px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_input .form-check{
+  margin: 30px 0 0 15px;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_input textarea{
+  border: #ddd solid 1px;
+  padding: 15px;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_input .company_logo{
+  float: left;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_input #company_intro{
+  margin-left: 20px;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_input .company_location{
+  overflow: hidden;
+  margin-top: 12px;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_input .company_location input{
+  margin-bottom: 5px;
+  border: #aaa solid 1px;
+}
+.notice_update #notice_info .notice_form .notice_row .notice_input .company_location #sample6_address{
+  width: 375px;
+}
+/* contact */
+
+.notice_update .btn_group{
+  float: right;
+}
+.notice_update .btn_group .update_btn{
+  margin: 15px 0;
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+}
+.notice_update .btn_group .delete_btn{
+  margin-top: 15px;
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+}
+.notice_update .btn_group button{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+  margin-top: 3px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* btn */
+/* notice_update 끝 */
+
+/* notice_save 시작 */
+
+.notice_save{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.notice_save{
+  background-color: antiquewhite;
+}
+.notice_save #notice_info{
+  position: relative;
+  padding: 34px 20px 35px 50px;
+  background-color: #fbfbfb;
+}
+.notice_save #notice_info .notice_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.notice_save #notice_info .notice_form .notice_row{
+  position: relative;
+  padding: 0 30px 25px;
+  display: block;
+}
+.notice_save #notice_info .notice_form .notice_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_list{
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_list{
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input .box_input{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  width: 500px;
+  height: 40px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input .form-check{
+  margin: 30px 0 0 15px;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input textarea{
+  border: #ddd solid 1px;
+  padding: 15px;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input .company_logo{
+  float: left;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input #company_intro{
+  margin-left: 20px;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input .company_location{
+  overflow: hidden;
+  margin-top: 12px;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input .company_location input{
+  margin-bottom: 5px;
+  border: #aaa solid 1px;
+}
+.notice_save #notice_info .notice_form .notice_row .notice_input .company_location #sample6_address{
+  width: 375px;
+}
+/* notice */
+
+.notice_save .btn_group{
+  float: right;
+}
+.notice_save .btn_group .update_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.notice_save .btn_group .delete_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.notice_save .btn_group button{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+  margin-top: 3px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 56px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* btn */
+/* notice_save 끝 */
+
+/* company_info 시작 */
+
+.company_info{
+  width: 800px;
+  float: right;
+}
+/* 전체 */
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.menu .company_list{
+  margin: 0 auto;
+  width: 240px;
+}
+.menu .company_list .company_list_item{
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  height: 44px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 44px;
+}
+/* menu */
+
+.company_info{
+  background-color: antiquewhite;
+}
+
+.company_info #basic_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.company_info #basic_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.company_info #basic_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_info #basic_info .basic_form .info_img{
+  float: left;
+  position: relative;
+  padding: 9px;
+  margin-right: 28px;
+  width: 120px;
+  height: 160px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+.company_info #basic_info .basic_form .info_img form{
+  margin: 10px;
+}
+.company_info #basic_info .basic_form .info_img form label{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+.company_info #basic_info .basic_form .info_img form input{
+  margin-bottom: 50px;
+}
+.company_info #basic_info .basic_form .info_img form input.hidden{
+  visibility: hidden;
+}
+.company_info #basic_info .basic_form .info_img button{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+.company_info #basic_info .basic_form .info_basic{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow: hidden;
+}
+.company_info #basic_info .basic_form .info_basic dt{
+  float: left;
+  margin-top: 12px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444;
+  letter-spacing: -1px;
+  display: block;
+}
+.company_info #basic_info .basic_form .info_basic .box_input{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+/* basic */
+
+.company_info #contact_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.company_info #contact_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.company_info #contact_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_info #contact_info .contact_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.company_info #contact_info .contact_form .contact_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.company_info #contact_info .contact_form .contact_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.company_info #contact_info .contact_form .contact_row .contact_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.company_info #contact_info .contact_form .contact_row .contact_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.company_info #contact_info .contact_form .contact_input .box_input{
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+.company_info #contact_info .contact_form .contact_input .select-group{
+  display: inline;
+  float: left;
+  margin: 12px 10px 0 0;
+}
+.company_info #contact_info .contact_form .contact_input #company_location{
+  width: 235px;
+}
+/* contact */
+
+.company_info #login_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.company_info #login_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.company_info #login_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_info #login_info .login_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.company_info #login_info .login_form .login_row{
+  position: relative;
+  padding: 0 49px 25px;
+  display: block;
+}
+.company_info #login_info .login_form .login_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.company_info #login_info .login_form .login_row .login_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.company_info #login_info .login_form .login_row .login_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.company_info #login_info .login_form .login_row .box_input{
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+/* login */
+
+.company_info .btn_group{
+  float: right;
+}
+
+.company_info .btn_group .update_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.company_info .btn_group .delete_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.company_info .btn_group button{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+  margin-top: 3px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 56px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* update_btn */
+/* company_info 끝 */
+
+/* company_info_update 시작 */
+
+.company_update{
+  width: 800px;
+  float: right;
+}
+/* 전체 */
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.menu .company_list{
+  margin: 0 auto;
+  width: 240px;
+}
+.menu .company_list .company_list_item{
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  height: 44px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 44px;
+}
+/* menu */
+
+.company_update{
+  background-color: antiquewhite;
+}
+.company_update #logo_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.company_update #logo_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.company_update #logo_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_update #logo_info .logo_form .info_img{
+  padding: 9px;
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+.company_update #logo_info .logo_form .info_img form{
+  margin: 10px;
+}
+.company_update #logo_info .logo_form .info_img form label{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+.company_update #logo_info .logo_form .info_img form input{
+  margin-bottom: 50px;
+}
+.company_update #logo_info .logo_form .info_img form input.hidden{
+  visibility: hidden;
+}
+.company_update #logo_info .logo_form .info_img button{
+  border: #ddd solid 1px;
+  background-color: rgb(243, 238, 238);
+}
+/* logo */
+
+.company_update #basic_info{
+  position: relative;
+  padding: 34px 20px 35px 50px;
+  background-color: #fbfbfb;
+}
+.company_update #basic_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.company_update #basic_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_update #basic_info .basic_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.company_update #basic_info .basic_form .basic_row{
+  position: relative;
+  padding: 0 30px 25px;
+  display: block;
+}
+.company_update #basic_info .basic_form .basic_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.company_update #basic_info .basic_form .basic_row .basic_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.company_update #basic_info .basic_form .basic_row .basic_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+.company_update #basic_info .basic_form .basic_input .box_input{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+.company_update #basic_info .basic_form .basic_input .basic_location{
+  overflow: hidden;
+  margin-top: 12px;
+}
+.company_update #basic_info .basic_form .basic_input .basic_location input{
+  margin-bottom: 5px;
+}
+.company_update #basic_info .basic_form .basic_input .basic_location #sample6_address{
+  width: 375px;
+}
+/* contact */
+
+.company_update #login_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.company_update #login_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.company_update #login_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_update #login_info .login_form .info_login{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow: hidden;
+}
+.company_update #login_info .login_form .info_login dt{
+  float: left;
+  margin-top: 12px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444;
+  letter-spacing: -1px;
+  display: block;
+}
+.company_update #login_info .login_form .info_login .box_input{
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+  margin-inline-start: 40px;
+  width: 300px;
+  height: 30px;
+  padding: 0 15px 0 25px;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+}
+/* login */
+
+.company_update #field_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.company_update #field_info .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+.company_update #field_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_update #field_info .field_select{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 40px 0 0 10px;
+  overflow: hidden;
+}
+.company_update #field_info .field_select form{
+  float: left;
+  width: 120px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #444;
+  letter-spacing: -1px;
+  display: block;
+}
+.company_update #field_info .field_select form .form-check{
+  margin-bottom: 10px;
+}
+.company_update #field_info .field_select form .form-check .form-check-input{}
+/* field */
+
+.company_update .btn_group{
+  float: right;
+}
+.company_update .btn_group .update_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.company_update .btn_group .delete_btn{
+  margin-top: 15px;
+  width: 200px;
+  display: inline-block;
+}
+.company_update .btn_group button{
+  border: 1px solid #4876ef;
+  background-color: #4876ef;
+  color: #fff;
+  margin-top: 3px;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 56px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* update_btn */
+/* company_info_update 끝 */
+
+/* company_info_detail 시작 */
+.company_detail{
+  width: 1000px;
+  float: right;
+  margin: 0 auto;
+}
+/* 전체 */
+
+.form{
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+.form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+/* form */
+
+.company_detail .btn_group{
+  float: right;
+}
+.company_detail .btn_group .subscribe_btn{
+  margin-top: 15px;
+  width: 75px;
+  height: 45px;
+  display: inline-block;
+  border: 1px solid #4876ef;
+  border-radius: 10px;
+  background-color: #4876ef;
+  color: #fff;
+
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* update_btn */
+
+.company_detail{
+  background-color: antiquewhite;
+}
+.company_detail #logo_info{
+  position: relative;
+  padding: 30px 0 0 30px;
+  background-color: #fbfbfb;
+}
+.company_detail #logo_info .logo_form .info_img{
+  padding: 15px;
+  margin-top: 30px;
+  width: 180px;
+  height: 200px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+/* logo */
+
+.company_detail #basic_info{
+  position: relative;
+  padding: 34px 20px 35px 50px;
+  background-color: #fbfbfb;
+}
+.company_detail #basic_info .form_title {
+position: relative;
+padding-bottom: 15px;
+min-height: 33px;
+}
+.company_detail #basic_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_detail #basic_info .basic_form{
+  position: relative;
+  padding: 50px 0 25px;
+  display: block;
+}
+.company_detail #basic_info .basic_form .basic_row{
+  position: relative;
+  padding: 0 30px 25px;
+  display: block;
+}
+.company_detail #basic_info .basic_form .basic_row:after{
+  display: table;
+  clear: both;
+  content: "";
+  table-layout: fixed;
+}
+.company_detail #basic_info .basic_form .basic_row .basic_list{
+  float: left;
+  padding-top: 15px;
+  width: 150px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+  display: block;
+}
+.company_detail #basic_info .basic_form .basic_row .basic_input{
+  padding-top: 15px;
+  color: #222;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 21px;
+}
+/* contact */
+
+.company_detail #field_info{
+  position: relative;
+  padding: 34px 50px 35px;
+  background-color: #fbfbfb;
+}
+.company_detail #field_info .form_title{
+  position: relative;
+  padding-bottom: 15px;
+  min-height: 33px;
+}
+.company_detail #field_info .form_title h2.title{
+  float: left;
+  color: #222;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 34px;
+}
+.company_detail #field_info .field_form{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 70px 0 0 30px;
+  overflow: hidden;
+}
+/* field */
+/* company_info_detail 끝 */

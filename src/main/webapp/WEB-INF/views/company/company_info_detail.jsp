@@ -7,210 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <style>
-    body{
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-      line-height: 1;
-      font-family: "Malgun Gothic",dotum,gulim,sans-serif;
-    }
-    ol, ul {
-      list-style: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-    a{
-      color: inherit;
-      text-decoration: none;
-    }
-    a:hover{
-      color: inherit;
-    }
-    input:focus{
-      outline: none;
-    }
-    button{
-      background: none;
-      color: inherit;
-      border: none;
-      cursor: pointer;
-      outline: inherit;
-    }
-    /* 기초세팅 */
-
-    body{
-      width: 1600px;
-      background-color: #fff;
-      align-items: center;
-    }
-    .container{
-      width: 1200px;
-      background-color: antiquewhite;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-    }
-    .row{
-      width: 1200px;
-      background-color: aliceblue;
-      padding-top: 80px;
-    }
-    .menu{
-      float: left;
-      width: 300px;
-      text-align: left;
-    }
-    .company_form{
-      width: 700px;
-      float: right;
-    }
-    /* 전체 */
-
-    .form{
-      justify-content: space-between;
-      align-items: center;
-      margin: 40px 0 60px;
-    }
-    .form_title{
-      position: relative;
-      padding-bottom: 15px;
-      min-height: 33px;
-    }
-    /* form */
-
-    .btn_group{
-      float: right;
-    }
-    .btn_group .subscribe_btn{
-      margin-top: 15px;
-      width: 75px;
-      height: 45px;
-      display: inline-block;
-      border: 1px solid #4876ef;
-      border-radius: 10px;
-      background-color: #4876ef;
-      color: #fff;
-
-      font-size: 20px;
-      font-weight: bolder;
-      letter-spacing: -1px;
-      line-height: 40px;
-      text-align: center;
-      vertical-align: middle;
-      cursor: pointer;
-    }
-    /* update_btn */
-    
-    .company_info{
-      background-color: antiquewhite;
-    }
-    #logo_info{
-      position: relative;
-      padding: 30px 0 0 30px;
-      background-color: #fbfbfb;
-    }
-    .logo_form .info_img{
-      padding: 15px;
-      margin-top: 30px;
-      width: 180px;
-      height: 200px;
-      border: 1px solid #e9e9e9;
-      box-sizing: border-box;
-      text-align: center;
-      background-color: #fff;
-    }
-    /* logo */
-
-    #basic_info{
-      position: relative;
-      padding: 34px 20px 35px 50px;
-      background-color: #fbfbfb;
-    }
-    #basic_info .form_title {
-    position: relative;
-    padding-bottom: 15px;
-    min-height: 33px;
-    }
-    #basic_info .form_title h2.title{
-      float: left;
-      color: #222;
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      line-height: 34px;
-    }
-
-    .basic_form{
-      position: relative;
-      padding: 50px 0 25px;
-      display: block;
-    }
-    .basic_row{
-      position: relative;
-      padding: 0 30px 25px;
-      display: block;
-    }
-    .basic_row:after{
-      display: table;
-      clear: both;
-      content: "";
-      table-layout: fixed;
-    }
-    .basic_form .basic_row .basic_list{
-      float: left;
-      padding-top: 15px;
-      width: 150px;
-      color: #222;
-      font-size: 16px;
-      letter-spacing: -1px;
-      line-height: 21px;
-      display: block;
-    }
-    .basic_form .basic_row .basic_input{
-      padding-top: 15px;
-      color: #222;
-      font-size: 16px;
-      letter-spacing: -1px;
-      line-height: 21px;
-    }
-    /* contact */
-
-    #field_info{
-      position: relative;
-      padding: 34px 50px 35px;
-      background-color: #fbfbfb;
-    }
-    #field_info .form_title{
-      position: relative;
-      padding-bottom: 15px;
-      min-height: 33px;
-    }
-    #field_info .form_title h2.title{
-      float: left;
-      color: #222;
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      line-height: 34px;
-    }
-    #field_info .field_form{
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      margin: 70px 0 0 30px;
-      overflow: hidden;
-    }
-    /* field */
-  </style>
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -241,7 +40,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="company_info">
+    <div class="company_detail">
 
       <div id="logo_info" class="form">
         <div class="btn_group">
@@ -335,7 +134,7 @@
       <!-- field -->
 
     </div>
-    <!-- company_intro -->
+    <!-- company_detail -->
   </div>
 </div>
 <!-- body -->

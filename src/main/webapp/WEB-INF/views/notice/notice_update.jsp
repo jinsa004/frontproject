@@ -7,289 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <style>
-    body{
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-      line-height: 1;
-      font-family: "Malgun Gothic",dotum,gulim,sans-serif;
-    }
-    ol, ul {
-      list-style: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-    a{
-      color: inherit;
-      text-decoration: none;
-    }
-    a:hover{
-      color: inherit;
-    }
-    input:focus{
-      outline: none;
-    }
-    button{
-      background: none;
-      color: inherit;
-      border: none;
-      cursor: pointer;
-      outline: inherit;
-    }
-    /* 기초세팅 */
-
-    body{
-      width: 1600px;
-      background-color: #fff;
-      align-items: center;
-    }
-    .container{
-      width: 1200px;
-      background-color: antiquewhite;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-    }
-    .row{
-      width: 1200px;
-      background-color: aliceblue;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .company_form{
-      width: 1000px;
-      margin: 0 auto;
-    }
-    /* 전체 */
-
-    .form{
-      justify-content: space-between;
-      align-items: center;
-      margin: 40px 0 60px;
-    }
-    .form_title{
-      position: relative;
-      padding-bottom: 15px;
-      min-height: 33px;
-    }
-    /* form */
-
-    .company_form{
-      background-color: antiquewhite;
-    }
-    #notice_info{
-      position: relative;
-      padding: 34px 20px 35px 50px;
-      background-color: #fbfbfb;
-    }
-    .notice_form{
-      position: relative;
-      padding: 50px 0 25px;
-      display: block;
-    }
-    .notice_row{
-      position: relative;
-      padding: 0 30px 25px;
-      display: block;
-    }
-    .notice_row:after{
-      display: table;
-      clear: both;
-      content: "";
-      table-layout: fixed;
-    }
-    .notice_form .notice_row .notice_list{
-      padding-top: 15px;
-      width: 150px;
-      color: #222;
-      font-size: 16px;
-      letter-spacing: -1px;
-      line-height: 21px;
-      display: block;
-    }
-    .notice_form .notice_row .notice_list{
-      color: #222;
-      font-size: 16px;
-      letter-spacing: -1px;
-      line-height: 21px;
-    }
-    
-    .notice_row .notice_input .box_input{
-      overflow: hidden;
-      display: block;
-      margin-top: 12px;
-      font-size: 16px;
-      line-height: 30px;
-      color: #444;
-      width: 500px;
-      height: 40px;
-      padding: 0 15px 0 25px;
-      border: 1px solid #dfdfdf;
-      box-sizing: border-box;
-    }
-    .notice_row .notice_input .form-check{
-      margin: 30px 0 0 15px;
-    }
-    .notice_row .notice_input textarea{
-      border: #ddd solid 1px;
-      padding: 15px;
-    }
-    .notice_row .notice_input .company_logo{
-      float: left;
-    }
-    .notice_row .notice_input #company_intro{
-      margin-left: 20px;
-    }
-
-
-    .notice_row .notice_input .company_location{
-      overflow: hidden;
-      margin-top: 12px;
-    }
-    .notice_row .notice_input .company_location input{
-      margin-bottom: 5px;
-      border: #aaa solid 1px;
-    }
-    .notice_row .notice_input .company_location #sample6_address{
-      width: 375px;
-    }
-    /* contact */
-
-    #login_info{
-      position: relative;
-      padding: 34px 50px 35px;
-      background-color: #fbfbfb;
-    }
-    #login_info .form_title {
-    position: relative;
-    padding-bottom: 15px;
-    min-height: 33px;
-    }
-    #login_info .form_title h2.title{
-      float: left;
-      color: #222;
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      line-height: 34px;
-    }
-    .login_form .info_login{
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      overflow: hidden;
-    }
-    .login_form .info_login dt{
-      float: left;
-      margin-top: 12px;
-      width: 120px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      color: #444;
-      letter-spacing: -1px;
-      display: block;
-    }
-    .login_form .info_login .box_input{
-      overflow: hidden;
-      display: block;
-      margin-top: 12px;
-      font-size: 16px;
-      line-height: 30px;
-      color: #444;
-      margin-inline-start: 40px;
-      width: 300px;
-      height: 30px;
-      padding: 0 15px 0 25px;
-      border: 1px solid #dfdfdf;
-      box-sizing: border-box;
-    }
-    /* login */
-
-    #field_info{
-      position: relative;
-      padding: 34px 50px 35px;
-      background-color: #fbfbfb;
-    }
-    #field_info .form_title{
-      position: relative;
-      padding-bottom: 15px;
-      min-height: 33px;
-    }
-    #field_info .form_title h2.title{
-      float: left;
-      color: #222;
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      line-height: 34px;
-    }
-    #field_info .field_select{
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      margin: 40px 0 0 10px;
-      overflow: hidden;
-    }
-    #field_info .field_select form{
-      float: left;
-      width: 120px;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #444;
-      letter-spacing: -1px;
-      display: block;
-    }
-    #field_info .field_select form .form-check{
-      margin-bottom: 10px;
-    }
-    #field_info .field_select form .form-check .form-check-input{}
-    /* field */
-
-    .btn_group{
-      float: right;
-    }
-    .btn_group .update_btn{
-      margin: 15px 0;
-      width: 150px;
-      height: 50px;
-      display: inline-block;
-    }
-    .btn_group .delete_btn{
-      margin-top: 15px;
-      width: 150px;
-      height: 50px;
-      display: inline-block;
-    }
-    .btn_group button{
-      border: 1px solid #4876ef;
-      background-color: #4876ef;
-      color: #fff;
-      margin-top: 3px;
-      width: 100%;
-      height: 100%;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -1px;
-      line-height: 40px;
-      text-align: center;
-      vertical-align: top;
-      cursor: pointer;
-    }
-    /* btn */
-  </style>
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -320,7 +40,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="company_form">
+    <div class="notice_update">
 
       <div id="notice_info" class="form">
         <div class="btn_group">
@@ -464,7 +184,7 @@
       <!-- update_btn -->
 
     </div>
-    <!-- company_form -->
+    <!-- notice_update -->
   </div>
 </div>
 <!-- body -->
@@ -476,7 +196,6 @@
 
 </body>
 
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
     function sample6_execDaumPostcode() {
         new daum.Postcode({
