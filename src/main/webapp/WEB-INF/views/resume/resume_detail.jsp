@@ -65,6 +65,7 @@
     .resume{
       background-color: antiquewhite;
       width: 800px;
+      margin: 0 auto;
     }
     /* 전체 */
 

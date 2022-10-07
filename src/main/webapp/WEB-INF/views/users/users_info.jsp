@@ -259,7 +259,6 @@
     }
     .contact_form .info_contact #user_location{
       width: 235px;
-
     }
     /* contact */
 

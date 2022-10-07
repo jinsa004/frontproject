@@ -61,6 +61,7 @@
       width: 1200px;
       background-color: aliceblue;
       padding-top: 80px;
+      margin: 100px auto 250px auto;
     }
     .menu{
       float: left;
@@ -237,7 +238,14 @@
       border: 1px solid #dfdfdf;
       box-sizing: border-box;
     }
-    .contact_form .info_contact .selece-group{}
+    .contact_form .info_contact .select-group{
+      display: inline;
+      float: left;
+      margin: 12px 10px 0 0;
+    }
+    .contact_form .info_contact #company_location{
+      width: 235px;
+    }
     /* contact */
 
     #login_info{
@@ -266,7 +274,7 @@
       margin-inline-end: 0px;
       overflow: hidden;
     }
-    ..login_form .info_login dt{
+    .login_form .info_login dt{
       float: left;
       margin-top: 12px;
       width: 120px;
@@ -277,7 +285,7 @@
       letter-spacing: -1px;
       display: block;
     }
-    ..login_form .info_login .box_input{
+    .login_form .info_login .box_input{
       overflow: hidden;
       display: block;
       margin-top: 12px;
@@ -293,14 +301,20 @@
     }
     /* login */
 
-    .btn_group{}
-    .btn_group .update_btn{
-      margin-top: 15px;
-      width: 260px;
-      display: block;
+    .btn_group{
       float: right;
     }
-    .btn_group .delete_btn{}
+
+    .btn_group .update_btn{
+      margin-top: 15px;
+      width: 200px;
+      display: inline-block;
+    }
+    .btn_group .delete_btn{
+      margin-top: 15px;
+      width: 200px;
+      display: inline-block;
+    }
     .btn_group button{
       border: 1px solid #4876ef;
       background-color: #4876ef;
@@ -407,8 +421,8 @@
               <select>
                 <option>부산</option>
                 <option>서울</option>
-                <option>1</option>
-                <option>2</option>
+                <option>대전</option>
+                <option>광주</option>
               </select>
             </div>
             <input type="text" id="company_location" name="company_location" class="box_input" value="금정구" placeholder="상세주소를 입력하세요"/>
