@@ -58,13 +58,13 @@
       position: relative;
     }
     .row{
-      margin: 100px auto 250px auto;
+      width: 1200px;
       justify-content: space-between;
       align-items: center;
     }
     .resume{
       background-color: antiquewhite;
-      width: 800px;
+      width: 1000px;
       margin: 0 auto;
     }
     /* 전체 */

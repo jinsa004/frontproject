@@ -7,11 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UsersController {
 
     @GetMapping("/users_info")
-    public String resume_udpate() {
+    public String 회원정보() {
         return "users/users_info";
     }
 
-
 }
-
-

@@ -61,7 +61,6 @@
       width: 1200px;
       background-color: aliceblue;
       padding-top: 80px;
-      margin: 100px auto 250px auto;
     }
     .menu{
       float: left;

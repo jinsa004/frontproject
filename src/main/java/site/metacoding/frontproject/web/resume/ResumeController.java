@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ResumeController {
 
     @GetMapping("/")
-    public String main() {
+    public String 메인() {
         return "resume/resume_detail";
     }
 
     @GetMapping("/resume_update")
-    public String resume_udpatel() {
+    public String 이력서등록() {
         return "resume/resume_update";
     }
 
     @GetMapping("/resume_detail")
-    public String resume_detail() {
+    public String 이력서상세보기() {
         return "resume/resume_detail";
     }
 
