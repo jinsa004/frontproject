@@ -8,7 +8,6 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import lombok.RequiredArgsConstructor;
-import site.metacoding.frontproject.domain.Image.Image;
 import site.metacoding.frontproject.domain.Image.ImageDao;
 import site.metacoding.frontproject.domain.Image.ImageDto;
 
@@ -18,7 +17,7 @@ public class ImageService {
 
     private final ImageDao imageDao;
 
-    public ImageDto insertImage(MultipartFile image) {
+    public ImageDto insertImage(MultipartFile image) throws Exception {
         // 파일이 빈 것이 들어오면 빈 것을 반환
         if (image.isEmpty()) {
             // return ;
@@ -65,6 +64,10 @@ public class ImageService {
                     .build();
 
             imageDao.save(imageDto);
+
+            // 저장된 파일로 변경하여 이를 보여주기 위함
+            file = new File(absolutePath + "/" + newImageName);
+            image.transferTo(file);
         }
         return imageDto;
     }

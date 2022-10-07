@@ -20,7 +20,7 @@ public class UploadController {
     }
 
     @PostMapping("/upload")
-    public String uploadImage(@RequestParam MultipartFile image) {
+    public String uploadImage(@RequestParam MultipartFile image) throws Exception {
         imageService.insertImage(image);
         return "/upload";
     }
