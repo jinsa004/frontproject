@@ -386,14 +386,14 @@
           </li>
             <ul class="resume_list">
               <li class="resume_list_item">
-                <a href="#">이력서 등록</a>
+                <a href="/resume_update">이력서 등록</a>
               </li>
               <li class="resume_list_item">
                 <a href="#">이력서 관리</a>
               </li>
-          </ul>
+            </ul>
           <li class="employ_list_item">
-            <a href="#">회원정보 관리</a>
+            <a href="/users_info">회원정보 관리</a>
           </li>
         </ul>
       </div>

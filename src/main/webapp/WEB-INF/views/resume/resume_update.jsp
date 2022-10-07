@@ -56,6 +56,7 @@
       justify-content: space-between;
       align-items: center;
       position: relative;
+      margin: 0 auto;
     }
     .row{
       width: 1200px;
@@ -67,7 +68,7 @@
       width: 300px;
       text-align: left;
     }
-    .users_form{
+    .resume_form{
       width: 700px;
       float: right;
     }
@@ -532,14 +533,14 @@
             </li>
               <ul class="resume_list">
                 <li class="resume_list_item">
-                  <a href="#">이력서 등록</a>
+                  <a href="/resume_update">이력서 등록</a>
                 </li>
                 <li class="resume_list_item">
                   <a href="#">이력서 관리</a>
                 </li>
-            </ul>
+              </ul>
             <li class="employ_list_item">
-              <a href="#">회원정보 관리</a>
+              <a href="/users_info">회원정보 관리</a>
             </li>
           </ul>
         </div>
@@ -774,7 +775,7 @@
       var con2 = document.getElementById("univ");
       var con3 = document.getElementById("high_btn");
       var con4 = document.getElementById("univ_btn");
-      if(con1.style.display=='none'){ 		
+      if(con3.style.background!='#4876ef'){ 		
         con1.style.display = 'block';
         con2.style.display = 'none';
         con3.style.background='#4876ef';
@@ -793,7 +794,7 @@
       var con2 = document.getElementById("highschool");
       var con3 = document.getElementById("high_btn");
       var con4 = document.getElementById("univ_btn");
-      if(con1.style.display=='none'){ 		
+      if(con4.style.background!='#4876ef'){ 		
         con1.style.display = 'block';
         con2.style.display = 'none';
         con4.style.background='#4876ef';
