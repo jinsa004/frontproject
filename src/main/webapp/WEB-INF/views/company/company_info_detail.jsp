@@ -85,6 +85,29 @@
     }
     /* form */
 
+    .btn_group{
+      float: right;
+    }
+    .btn_group .subscribe_btn{
+      margin-top: 15px;
+      width: 75px;
+      height: 45px;
+      display: inline-block;
+      border: 1px solid #4876ef;
+      border-radius: 10px;
+      background-color: #4876ef;
+      color: #fff;
+
+      font-size: 20px;
+      font-weight: bolder;
+      letter-spacing: -1px;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    /* update_btn */
+    
     .company_info{
       background-color: antiquewhite;
     }
@@ -94,17 +117,14 @@
       background-color: #fbfbfb;
     }
     .logo_form .info_img{
-      padding: 9px;
+      padding: 15px;
       margin-top: 30px;
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 200px;
       border: 1px solid #e9e9e9;
       box-sizing: border-box;
       text-align: center;
       background-color: #fff;
-    }
-    .logo_form .info_img form{
-      margin: 10px;
     }
     /* logo */
 
@@ -190,37 +210,6 @@
       overflow: hidden;
     }
     /* field */
-
-    .btn_group{
-      float: right;
-    }
-    .btn_group .update_btn{
-      margin-top: 15px;
-      width: 200px;
-      display: inline-block;
-    }
-    .btn_group .delete_btn{
-      margin-top: 15px;
-      width: 200px;
-      display: inline-block;
-    }
-    .btn_group button{
-      border: 1px solid #4876ef;
-      background-color: #4876ef;
-      color: #fff;
-      margin-top: 3px;
-      width: 100%;
-      height: 60px;
-      font-size: 18px;
-      font-weight: bold;
-      letter-spacing: -1px;
-      line-height: 56px;
-      text-align: center;
-      vertical-align: top;
-      cursor: pointer;
-    }
-    /* update_btn */
-    
   </style>
 </head>
 
@@ -255,9 +244,15 @@
     <div class="company_info">
 
       <div id="logo_info" class="form">
+        <div class="btn_group">
+          <div class="subscribe_btn">
+            <button type="button" onclick="location.href='#'">구독</button>
+          </div>
+        </div>
+        <!-- subscribe_btn -->
         <div class="logo_form">
           <div class="info_img">
-            <img src="assets/resume/face1.jpg" width="100" height="140"/>
+            <img src="assets/resume/face1.jpg" width="160" height="170"/>
           </div>
         </div>
       </div>
