@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
 <html lang="en">
 <head>
-  <title>기업 정보 관리</title>
+  <title>기업 소개 입력</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -105,6 +105,53 @@
       background-color: antiquewhite;
     }
 
+    #logo_info{
+      position: relative;
+      padding: 34px 50px 35px;
+      background-color: #fbfbfb;
+    }
+    #logo_info .form_title {
+    position: relative;
+    padding-bottom: 15px;
+    min-height: 33px;
+    }
+    #logo_info .form_title h2.title{
+      float: left;
+      color: #222;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      line-height: 34px;
+    }
+    .logo_form .info_img{
+      padding: 9px;
+      margin-top: 30px;
+      width: 150px;
+      height: 150px;
+      border: 1px solid #e9e9e9;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #fff;
+    }
+    .logo_form .info_img form{
+      margin: 10px;
+    }
+    .logo_form .info_img form label{
+      border: #ddd solid 1px;
+      background-color: rgb(243, 238, 238);
+    }
+    .logo_form .info_img form input{
+      margin-bottom: 50px;
+    }
+    .logo_form .info_img form input.hidden{
+      visibility: hidden;
+    }
+    .logo_form .info_img button{
+      border: #ddd solid 1px;
+      background-color: rgb(243, 238, 238);
+    }
+    /* logo */
+
     #basic_info{
       position: relative;
       padding: 34px 50px 35px;
@@ -123,36 +170,7 @@
       letter-spacing: -2px;
       line-height: 34px;
     }
-    .basic_form .info_img{
-      float: left;
-      position: relative;
-      padding: 9px;
-      margin-right: 28px;
-      width: 120px;
-      height: 160px;
-      border: 1px solid #e9e9e9;
-      box-sizing: border-box;
-      text-align: center;
-      background-color: #fff;
-    }
-    .basic_form .info_img form{
-      margin: 10px;
-    }
-    .basic_form .info_img form label{
-      border: #ddd solid 1px;
-      background-color: rgb(243, 238, 238);
-    }
-    .basic_form .info_img form input{
-      margin-bottom: 50px;
-    }
-    .basic_form .info_img form input.hidden{
-      visibility: hidden;
-    }
-    .basic_form .info_img button{
-      border: #ddd solid 1px;
-      background-color: rgb(243, 238, 238);
-    }
-    .info_basic{
+    .basic_form .info_basic{
       display: block;
       margin-block-start: 1em;
       margin-block-end: 1em;
@@ -160,7 +178,7 @@
       margin-inline-end: 0px;
       overflow: hidden;
     }
-    .info_basic dt{
+    .basic_form .info_basic dt{
       float: left;
       margin-top: 12px;
       width: 120px;
@@ -171,7 +189,7 @@
       letter-spacing: -1px;
       display: block;
     }
-    .info_basic .box_input{
+    .basic_form .info_basic .box_input{
       overflow: hidden;
       display: block;
       margin-top: 12px;
@@ -185,66 +203,15 @@
       border: 1px solid #dfdfdf;
       box-sizing: border-box;
     }
-    /* basic */
-
-    #contact_info{
-      position: relative;
-      padding: 34px 50px 35px;
-      background-color: #fbfbfb;
-    }
-    #contact_info .form_title {
-    position: relative;
-    padding-bottom: 15px;
-    min-height: 33px;
-    }
-    #contact_info .form_title h2.title{
-      float: left;
-      color: #222;
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      line-height: 34px;
-    }
-    .contact_form .info_contact{
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
+    .basic_form .info_basic .basic_location{
       overflow: hidden;
-    }
-    .contact_form .info_contact dt{
-      float: left;
       margin-top: 12px;
-      width: 120px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      color: #444;
-      letter-spacing: -1px;
-      display: block;
     }
-    .contact_form .info_contact .box_input{
-      overflow: hidden;
-      display: block;
-      margin-top: 12px;
-      font-size: 16px;
-      line-height: 30px;
-      color: #444;
-      margin-inline-start: 40px;
-      width: 300px;
-      height: 30px;
-      padding: 0 15px 0 25px;
-      border: 1px solid #dfdfdf;
-      box-sizing: border-box;
+    .basic_form .info_basic .basic_location input{
+      margin-bottom: 5px;
     }
-    .contact_form .info_contact .select-group{
-      display: inline;
-      float: left;
-      margin: 12px 10px 0 0;
-    }
-    .contact_form .info_contact #company_location{
-      width: 235px;
+    .basic_form .info_basic .basic_location #sample6_address{
+      width: 375px;
     }
     /* contact */
 
@@ -301,10 +268,52 @@
     }
     /* login */
 
+    #field_info{
+      position: relative;
+      padding: 34px 50px 35px;
+      background-color: #fbfbfb;
+    }
+    #field_info .form_title{
+      position: relative;
+      padding-bottom: 15px;
+      min-height: 33px;
+    }
+    #field_info .form_title h2.title{
+      float: left;
+      color: #222;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      line-height: 34px;
+    }
+    #field_info .field_select{
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin: 40px 0 0 10px;
+      overflow: hidden;
+    }
+    #field_info .field_select form{
+      float: left;
+      width: 120px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #444;
+      letter-spacing: -1px;
+      display: block;
+    }
+    #field_info .field_select form .form-check{
+      margin-bottom: 10px;
+    }
+    #field_info .field_select form .form-check .form-check-input{}
+    /* field */
+
     .btn_group{
       float: right;
     }
-
     .btn_group .update_btn{
       margin-top: 15px;
       width: 200px;
@@ -338,7 +347,7 @@
 <body>
 
 <div class="p-5 border text-center">
-  <h1>기업 정보 관리</h1>
+  <h1>기업 소개 입력</h1>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -382,82 +391,93 @@
 
     <div class="company_form">
 
-      <div id="basic_info" class="form">
+      <div id="logo_info" class="form">
         <div class="form_title">
-          <h2 class="title">기본정보</h2>
+          <h2 class="title">회사로고</h2>
         </div>
-        <div class="basic_form">
+        <div class="logo_form">
           <div class="info_img">
-            <form method="post" action="/resume_detail" enctype="multipart/form-data">
+            <form method="post" action="/#" enctype="multipart/form-data">
               <label for="files">파일 선택</label>
               <input type="file" name="file" id="files" class="hidden"/>
               <button type="submit">파일전송</button>
             </form>
           </div>
+        </div>
+      </div>
+      <!-- logo -->
+
+      <div id="basic_info" class="form">
+        <div class="form_title">
+          <h2 class="title">회사 정보</h2>
+        </div>
+        <div class="basic_form">
           <dl class="info_basic">
             <dt class="info_list_item">회사명</dt>
-            <input type="text" id="company_name" name="company_name" class="box_input" value="그린" placeholder="회사명을 입력하세요"/>
-            <dt class="info_list_item">사업자번호</dt>
-            <input type="text" id="company_number" name="company_number" class="box_input" value="1231312-123123" placeholder="사업자번호를 입력하세요"/>
+            <input type="text" id="basic_name" name="basic_name" class="box_input" value="그린" placeholder="회사명을 입력하세요"/>
             <dt class="info_list_item">설립년도</dt>
-            <input type="text" id="company_birth" name="company_birth" class="box_input" value="2022년 10월 07일" placeholder="설립년도를 입력하세요"/>
-          </dl>
-        </div>
-      </div>
-      <!-- info -->
-
-      <div id="contact_info" class="form">
-        <div class="form_title">
-          <h2 class="title">담당자 연락처</h2>
-        </div>
-        <div class="contact_form">
-          <dl class="info_contact">
-            <dt class="info_list_item">휴대폰</dt>
-            <input type="text" id="company_tel" name="company_tel" class="box_input" value="010-0000-0000" placeholder="휴대폰 번호을 입력하세요"/>
-            <dt class="info_list_item">이메일</dt>
-            <input type="text" id="company_email" name="company_email" class="box_input" value="green@nate.com" placeholder="이메일을 입력하세요"/>
-            <dt class="info_list_item">기업 주소</dt>
-            <div class="select-group">
-              <select>
-                <option>부산</option>
-                <option>서울</option>
-                <option>대전</option>
-                <option>광주</option>
-              </select>
+            <input type="text" id="basic_birth" name="basic_birth" class="box_input" value="2022년 10월 17일" placeholder="설립년도를 입력하세요"/>
+            <dt class="info_list_item">주요업무</dt>
+            <input type="text" id="basic_task" name="basic_task" class="box_input" value="서버관리" placeholder="주요 업무를 입력하세요"/>
+            <dt class="info_list_item">평균연봉</dt>
+            <input type="text" id="basic_sal" name="basic_sal" class="box_input" value="4000만원" placeholder="평균연봉을 입력하세요"/>
+            <dt class="info_list_item">기업복지</dt>
+            <input type="text" id="basic_welfare" name="basic_welfare" class="box_input" value="1. 유연한 출퇴근" placeholder="복지를 입력하세요"/>
+            <dt class="info_list_item">회사소개</dt>
+            <input type="text" id="basic_content" name="basic_content" class="box_input" value="기업가치를 추구" placeholder="회사소개를 입력하세요"/>
+            <dt class="info_list_item">회사위치</dt>
+            <div class="basic_location">
+              <input type="text" id="sample6_postcode" placeholder="우편번호">
+              <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+              <input type="text" id="sample6_address" placeholder="주소"><br>
+              <input type="text" id="sample6_detailAddress" placeholder="상세주소">
+              <input type="text" id="sample6_extraAddress" placeholder="참고항목">
             </div>
-            <input type="text" id="company_location" name="company_location" class="box_input" value="금정구" placeholder="상세주소를 입력하세요"/>
           </dl>
         </div>
       </div>
-      <!-- contact -->
+      <!-- basic -->
 
-      <div id="login_info" class="form">
+      <div id="field_info" class="form">
         <div class="form_title">
-          <h2 class="title">로그인 정보</h2>
+          <h2 class="title">관심분야</h2>
         </div>
-        <div class="login_form">
-        <dl class="info_login">
-          <dt class="info_list_item">ID</dt>
-          <input type="text" id="company_id" name="company_id" class="box_input" value="ssar" placeholder="아이디를 입력하세요"/>
-          <dt class="info_list_item">Password</dt>
-          <input type="text" id="company_password" name="company_password" class="box_input" value="1234" placeholder="비밀번호를 입력하세요"/>
-        </dl>
+        <div class="field_select">
+            <form method="post" action="/#">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="프론트엔드" name="프론트엔드" value="프론트엔드">
+                <label class="form-check-label" for="프론트엔드">프론트엔드</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="백엔드" name="백엔드" value="백엔드">
+                <label class="form-check-label" for="백엔드">백엔드</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="풀스택" name="풀스택" value="풀스택">
+                <label class="form-check-label" for="풀스택">풀스택</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="안드로이드" name="안드로이드" value="안드로이드">
+                <label class="form-check-label" for="chec안드로이드k1">안드로이드</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="IOS" name="IOS" value="IOS">
+                <label class="form-check-label" for="IOS">IOS</label>
+              </div>
+            </form>
         </div>
       </div>
-      <!-- login -->
+      <!-- field -->
 
       <div class="btn_group">
         <div class="update_btn">
           <button type="button" onclick="location.href='#'">등록완료</button>
         </div>
-        <div class="delete_btn">
-          <button type="button" onclick="location.href='#'">회원탈퇴</button>
-        </div>
       </div>
       <!-- btn -->
 
     </div>
-    <!-- resume_form -->
+    <!-- company_form -->
   </div>
 </div>
 <!-- body -->
@@ -468,4 +488,41 @@
 <!-- footer -->
 
 </body>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                var addr = ''; 
+                var extraAddr = '';
+
+                if (data.userSelectedType === 'R') {
+                    addr = data.roadAddress;
+                } else {
+                    addr = data.jibunAddress;
+                }
+
+                if(data.userSelectedType === 'R'){
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    document.getElementById("sample6_extraAddress").value = extraAddr;
+                } else {
+                    document.getElementById("sample6_extraAddress").value = '';
+                }
+
+                document.getElementById('sample6_postcode').value = data.zonecode;
+                document.getElementById("sample6_address").value = addr;
+                document.getElementById("sample6_detailAddress").focus();
+            }
+        }).open();
+    }
+</script>
 </html>
