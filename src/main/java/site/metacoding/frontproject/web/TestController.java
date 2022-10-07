@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class TestController {
 
+    @GetMapping("/matchingCompany")
+    public String companyMatchingList() {
+        return "company/matchingCompany";
+    }
+
     @GetMapping("/resumeList")
     public String resumeList() {
         return "company/resumeList";

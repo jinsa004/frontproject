@@ -78,7 +78,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
                 <a href="/supporter">공고/지원자관리</a>
               </li>
               <li>
-                <a href="">매칭리스트</a>
+                <a href="/matchingCompany">매칭리스트</a>
               </li>
             </ul>
           </nav>
