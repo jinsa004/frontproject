@@ -209,66 +209,170 @@ section{
     margin: 0 auto;
 }
 .notice_box{
-
-    margin-top: 25px;
-    
+    margin-top: 25px;   
 }
+
+.notice_inner1{}
 
 table{
     border-spacing: 0px;
 }
-.notice_box tr{
-    border-top: 1px solid #f4f4f4;
+.notice_box .notice_title{
+    border-top: 1px solid #eee;
+    margin-top: 60px;
 }
-.notice_box th{
+.notice_box .notice_title ul{
+    font-size: 0;
+    position: relative;
+}
+.notice_box .notice_title ul li{
+    display: inline-block;
     font-size: 15px;
-    color: #fff;
+    color: #444;
     letter-spacing: -0.04em;
     text-align: center;
     padding: 10px 0;
-    background: #e9e9e9;
+    background: #dbe5ff;
     font-weight: 500;
+    vertical-align: top;
     
 }
-.notice_box td{
-    text-align: center;
-    padding: 30px 0;
-    border-bottom: 1px solid #f4f4f4;
+.notice_box .notice_title ul li:nth-child(1){
+    width: 200px;
 }
-.notice_box td:nth-child(1){
-    padding: 20px 0;
+.notice_box .notice_title ul li:nth-child(2){
+    width: 600px;
 }
-.notice_box td:nth-child(2){
-    padding-left: 15px;
+.notice_box .notice_title ul li:nth-child(3){
+    width: 160px;
 }
-.notice_box td:nth-child(2) a{
-    font-size: 16px;
+.notice_box .notice_title ul li:nth-child(4){
+    width: 120px;
+}
+.notice_box .notice_title ul li:nth-child(5){
+    width: 120px;
+}
+.notice_box .notice_inner{
     text-align: left;
-    color: #333;
 }
-.notice_box tr:hover td:nth-child(2){
-    text-decoration: underline;
+.notice_ul_wrap{
+    position: relative;
+    transition: all 0.4s;
 }
-.notice_box td{
+.notice_ul_wrap:hover .notice_hover{
+    opacity: 1;
+    transition: all 0.4s;
+}
+.notice_box .notice_inner ul{
+    font-size: 0;
+    border-bottom: 1px solid #eee;
+}
+.notice_box .notice_inner ul li{
+    display: inline-block;
     color: #666;
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 80%;
-    font-size: 13px;
+    font-size: 14px;
+    padding: 35px 20px 45px;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: #fff;
 }
-.notice_box td span.notice_small{
+.notice_box .notice_inner ul li:nth-child(1){
+    width: 200px;
+    padding: 16px 12px 20px;
+    height: 123px;
+}
+.notice_box .notice_inner ul li:nth-child(1) a{
+    text-align: center;
+    background: #fff;
+    display: block;
+    padding-top: 5px;
+}
+.notice_box .notice_inner ul li:nth-child(2){
+    width: 600px;
+    padding-left: 25px;
+}
+.notice_box .notice_inner ul li:nth-child(3){
+    width: 160px;
+    text-align: center;
+}
+.notice_box .notice_inner ul li:nth-child(4){
+    width: 120px;
+    text-align: center;
+}
+.notice_box .notice_inner ul li:nth-child(5){
+    width: 120px;
+    text-align: center;
+}
+
+
+.notice_box .notice_inner ul li:nth-child(2) a{
+    font-size: 18px;
+    text-align: left;
+    color: #333;
+    font-weight: 500;
+}
+.notice_box .notice_inner ul li:hover{
+    text-decoration: underline;
+}
+
+.notice_box .notice_inner span.notice_small{
     display: block;
     color: #666;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 15px;
-    padding-top: 4px;
+    padding-top: 8px;
     font-weight: 200;
 }
 
-.notice_box td a img{
-    max-width: 120px;
+.notice_box .notice_inner a img{
+    max-width: 180px;
     height: auto;
 }
+.notice_hover{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.notice_hover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 0;
+    text-align: center;
+    transition: all 0.6s;
+}
+.notice_hover span{
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    height: 40px;
+    background: #4876ef;
+    border-radius: 20px;
+    margin-top: 42px;
+    transition: all 0.4s;
+}
+.notice_hover span:first-child{
+    margin-right: 15px;
+}
+.notice_hover span a{
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+}
+.notice_hover span:hover{
+    background: #0ccca4;
+
+}
+.notice_hover span:hover a{
+    color: #fff;
+}
+
 
 .paging{
     margin-top: 45px;
@@ -642,6 +746,9 @@ input.login_check{
 /* ================기업메인====================================== */
 .resume_list{
 
+}
+.supporter_resume_box{
+    margin-top: 60px;
 }
 .resume_form{
     text-align: left;

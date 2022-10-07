@@ -2,9 +2,21 @@ package site.metacoding.frontproject.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class TestController {
+
+    @GetMapping("/resumeList")
+    public String resumeList() {
+        return "company/resumeList";
+    }
+
+    @GetMapping("/supporter")
+    public String supportList() {
+        return "company/supporter";
+    }
+
     @GetMapping("/mainCompany")
     public String companyMain() {
         return "company/mainCompany";

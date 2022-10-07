@@ -229,6 +229,7 @@ table{
     padding: 10px 0;
     background: #e8eeff;
     font-weight: 500;
+    vertical-align: top;
     
 }
 .notice_box .notice_title ul li:nth-child(1){
@@ -260,16 +261,20 @@ table{
     white-space: nowrap;
     max-width: 80%;
     font-size: 14px;
-    padding: 35px 20px 40px;
+    padding: 35px 20px 45px;
     box-sizing: border-box;
     vertical-align: top;
 }
 .notice_box .notice_inner ul li:nth-child(1){
     width: 200px;
-    padding: 18px 30px 23px;
+    padding: 16px 12px 20px;
+    height: 123px;
 }
 .notice_box .notice_inner ul li:nth-child(1) a{
     text-align: center;
+    background: #fff;
+    display: block;
+    padding-top: 5px;
 }
 .notice_box .notice_inner ul li:nth-child(2){
     width: 600px;
@@ -309,7 +314,7 @@ table{
 }
 
 .notice_box .notice_inner a img{
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
 }
 

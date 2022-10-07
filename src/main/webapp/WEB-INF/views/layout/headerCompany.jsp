@@ -75,7 +75,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
                 <a href="">공고등록</a>
               </li>
               <li>
-                <a href="">공고/지원자관리</a>
+                <a href="/supporter">공고/지원자관리</a>
               </li>
               <li>
                 <a href="">매칭리스트</a>
@@ -317,6 +317,4 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       </div>
     </div>
   </body>
-
-  
 </html>
