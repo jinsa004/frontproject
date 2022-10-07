@@ -61,6 +61,7 @@
       width: 1200px;
       background-color: aliceblue;
       padding-top: 80px;
+      margin: 100px auto 250px auto;
     }
     .menu{
       float: left;
@@ -72,6 +73,18 @@
       float: right;
     }
     /* 전체 */
+
+    .form{
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0 60px;
+    }
+    .form_title{
+      position: relative;
+      padding-bottom: 15px;
+      min-height: 33px;
+    }
+    /* form */
 
     .menu .employ_list{
       margin: 0 auto;
@@ -239,7 +252,15 @@
       border: 1px solid #dfdfdf;
       box-sizing: border-box;
     }
-    .contact_form .info_contact .selece-group{}
+    .contact_form .info_contact .select-group{
+      display: inline;
+      float: left;
+      margin: 12px 10px 0 0;
+    }
+    .contact_form .info_contact #user_location{
+      width: 235px;
+
+    }
     /* contact */
 
     #login_info{
@@ -268,7 +289,7 @@
       margin-inline-end: 0px;
       overflow: hidden;
     }
-    ..login_form .info_login dt{
+    .login_form .info_login dt{
       float: left;
       margin-top: 12px;
       width: 120px;
@@ -279,7 +300,7 @@
       letter-spacing: -1px;
       display: block;
     }
-    ..login_form .info_login .box_input{
+    .login_form .info_login .box_input{
       overflow: hidden;
       display: block;
       margin-top: 12px;
@@ -314,22 +335,43 @@
       line-height: 34px;
     }
     #field_info .field_select{
-      padding: 50px 70px;
-      border-bottom: 1px solid #ebebeb;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin: 40px 0 0 10px;
+      overflow: hidden;
     }
-    #field_info .field_select form{}
-    #field_info .field_select form .form-check{}
+    #field_info .field_select form{
+      float: left;
+      width: 120px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #444;
+      letter-spacing: -1px;
+      display: block;
+    }
+    #field_info .field_select form .form-check{
+      margin-bottom: 10px;
+    }
     #field_info .field_select form .form-check .form-check-input{}
     /* field */
 
-    .btn_group{}
-    .btn_group .update_btn{
-      margin-top: 15px;
-      width: 260px;
-      display: block;
+    .btn_group{
       float: right;
     }
-    .btn_group .delete_btn{}
+    .btn_group .update_btn{
+      margin-top: 15px;
+      width: 200px;
+      display: inline-block;
+    }
+    .btn_group .delete_btn{
+      margin-top: 15px;
+      width: 200px;
+      display: inline-block;
+    }
     .btn_group button{
       border: 1px solid #4876ef;
       background-color: #4876ef;
@@ -441,8 +483,8 @@
               <select>
                 <option>부산</option>
                 <option>서울</option>
-                <option>1</option>
-                <option>2</option>
+                <option>대전</option>
+                <option>광주</option>
               </select>
             </div>
             <input type="text" id="user_location" name="user_location" class="box_input" value="부산 금정구" placeholder="상세주소를 입력하세요"/>
@@ -456,12 +498,12 @@
           <h2 class="title">로그인 정보</h2>
         </div>
         <div class="login_form">
-        <dl class="info_login">
-          <dt class="info_list_item">ID</dt>
-          <input type="text" id="user_id" name="user_id" class="box_input" value="ssar" placeholder="아이디를 입력하세요"/>
-          <dt class="info_list_item">Password</dt>
-          <input type="text" id="user_password" name="user_password" class="box_input" value="1234" placeholder="비밀번호를 입력하세요"/>
-        </dl>
+          <dl class="info_login">
+            <dt class="info_list_item">ID</dt>
+            <input type="text" id="user_id" name="user_id" class="box_input" value="ssar" placeholder="아이디를 입력하세요"/>
+            <dt class="info_list_item">Password</dt>
+            <input type="text" id="user_password" name="user_password" class="box_input" value="1234" placeholder="비밀번호를 입력하세요"/>
+          </dl>
         </div>
       </div>
       <!-- login -->

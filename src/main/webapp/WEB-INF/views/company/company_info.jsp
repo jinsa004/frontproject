@@ -73,6 +73,18 @@
     }
     /* 전체 */
 
+    .form{
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0 60px;
+    }
+    .form_title{
+      position: relative;
+      padding-bottom: 15px;
+      min-height: 33px;
+    }
+    /* form */
+
     .menu .company_list{
       margin: 0 auto;
       width: 240px;

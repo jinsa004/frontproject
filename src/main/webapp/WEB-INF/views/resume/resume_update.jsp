@@ -74,6 +74,18 @@
     }
     /* 전체 */
 
+    .form{
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0 60px;
+    }
+    .form_title{
+      position: relative;
+      padding-bottom: 15px;
+      min-height: 33px;
+    }
+    /* form */
+
     .menu .employ_list{
       margin: 0 auto;
       width: 240px;
@@ -143,11 +155,7 @@
       padding: 34px 50px 35px;
       background-color: #fbfbfb;
     }
-    #info .form_title {
-    position: relative;
-    padding-bottom: 15px;
-    min-height: 33px;
-    }
+    
     #info .form_title h2.title{
       float: left;
       color: #222;
