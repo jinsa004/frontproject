@@ -154,7 +154,7 @@
 
     #basic_info{
       position: relative;
-      padding: 34px 50px 35px;
+      padding: 34px 20px 35px 50px;
       background-color: #fbfbfb;
     }
     #basic_info .form_title {
@@ -170,26 +170,42 @@
       letter-spacing: -2px;
       line-height: 34px;
     }
-    .basic_form .info_basic{
+
+    .basic_form{
+      position: relative;
+      padding: 50px 0 25px;
       display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      overflow: hidden;
     }
-    .basic_form .info_basic dt{
+    .basic_row{
+      position: relative;
+      padding: 0 30px 25px;
+      display: block;
+    }
+    .basic_row:after{
+      display: table;
+      clear: both;
+      content: "";
+      table-layout: fixed;
+    }
+    .basic_form .basic_row .basic_list{
       float: left;
-      margin-top: 12px;
-      width: 120px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      color: #444;
+      padding-top: 15px;
+      width: 150px;
+      color: #222;
+      font-size: 16px;
       letter-spacing: -1px;
+      line-height: 21px;
       display: block;
     }
-    .basic_form .info_basic .box_input{
+    .basic_form .basic_row .basic_input{
+      padding-top: 15px;
+      color: #222;
+      font-size: 16px;
+      letter-spacing: -1px;
+      line-height: 21px;
+    }
+    
+    .basic_form .basic_input .box_input{
       overflow: hidden;
       display: block;
       margin-top: 12px;
@@ -203,14 +219,14 @@
       border: 1px solid #dfdfdf;
       box-sizing: border-box;
     }
-    .basic_form .info_basic .basic_location{
+    .basic_form .basic_input .basic_location{
       overflow: hidden;
       margin-top: 12px;
     }
-    .basic_form .info_basic .basic_location input{
+    .basic_form .basic_input .basic_location input{
       margin-bottom: 5px;
     }
-    .basic_form .info_basic .basic_location #sample6_address{
+    .basic_form .basic_input .basic_location #sample6_address{
       width: 375px;
     }
     /* contact */
@@ -412,28 +428,69 @@
           <h2 class="title">회사 정보</h2>
         </div>
         <div class="basic_form">
-          <dl class="info_basic">
-            <dt class="info_list_item">회사명</dt>
-            <input type="text" id="basic_name" name="basic_name" class="box_input" value="그린" placeholder="회사명을 입력하세요"/>
-            <dt class="info_list_item">설립년도</dt>
-            <input type="text" id="basic_birth" name="basic_birth" class="box_input" value="2022년 10월 17일" placeholder="설립년도를 입력하세요"/>
-            <dt class="info_list_item">주요업무</dt>
-            <input type="text" id="basic_task" name="basic_task" class="box_input" value="서버관리" placeholder="주요 업무를 입력하세요"/>
-            <dt class="info_list_item">평균연봉</dt>
-            <input type="text" id="basic_sal" name="basic_sal" class="box_input" value="4000만원" placeholder="평균연봉을 입력하세요"/>
-            <dt class="info_list_item">기업복지</dt>
-            <input type="text" id="basic_welfare" name="basic_welfare" class="box_input" value="1. 유연한 출퇴근" placeholder="복지를 입력하세요"/>
-            <dt class="info_list_item">회사소개</dt>
-            <input type="text" id="basic_content" name="basic_content" class="box_input" value="기업가치를 추구" placeholder="회사소개를 입력하세요"/>
-            <dt class="info_list_item">회사위치</dt>
-            <div class="basic_location">
-              <input type="text" id="sample6_postcode" placeholder="우편번호">
-              <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-              <input type="text" id="sample6_address" placeholder="주소"><br>
-              <input type="text" id="sample6_detailAddress" placeholder="상세주소">
-              <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">회사명</p>
             </div>
-          </dl>
+            <div class="basic_input">
+              <input type="text" id="basic_name" name="basic_name" class="box_input" value="그린" placeholder="회사명을 입력하세요"/>
+            </div>
+          </div>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">설립년도</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="basic_birth" name="basic_birth" class="box_input" value="2022년 10월 17일" placeholder="설립년도를 입력하세요"/>
+            </div>
+          </div>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">주요업무</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="basic_task" name="basic_task" class="box_input" value="서버관리" placeholder="주요 업무를 입력하세요"/>
+            </div>
+          </div>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">평균연봉</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="basic_sal" name="basic_sal" class="box_input" value="4000만원" placeholder="평균연봉을 입력하세요"/>
+            </div>
+          </div>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">기업복지</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="basic_welfare" name="basic_welfare" class="box_input" value="1. 유연한 출퇴근" placeholder="복지를 입력하세요"/>
+            </div>
+          </div>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">회사소개</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="basic_content" name="basic_content" class="box_input" value="기업가치를 추구" placeholder="회사소개를 입력하세요"/>
+            </div>
+          </div>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">회사위치</p>
+            </div>
+            <div class="basic_input">
+              <div class="basic_location">
+                <input type="text" id="sample6_postcode" placeholder="우편번호">
+                <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+                <input type="text" id="sample6_address" placeholder="주소"><br>
+                <input type="text" id="sample6_detailAddress" placeholder="상세주소">
+                <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <!-- basic -->

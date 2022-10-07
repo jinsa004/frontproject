@@ -205,29 +205,44 @@
       letter-spacing: -2px;
       line-height: 34px;
     }
-    .contact_form .info_contact{
+
+    .contact_form{
+      position: relative;
+      padding: 50px 0 25px;
       display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      overflow: hidden;
     }
-    .contact_form .info_contact dt{
+    
+    .contact_row{
+      position: relative;
+      padding: 0 49px 25px;
+      display: block;
+    }
+    .contact_row:after{
+      display: table;
+      clear: both;
+      content: "";
+      table-layout: fixed;
+    }
+    .contact_form .contact_row .contact_list{
       float: left;
-      margin-top: 12px;
-      width: 120px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      color: #444;
+      padding-top: 15px;
+      width: 150px;
+      color: #222;
+      font-size: 16px;
       letter-spacing: -1px;
+      line-height: 21px;
       display: block;
     }
-    .contact_form .info_contact .box_input{
+    .contact_form .contact_row .contact_input{
+      padding-top: 15px;
+      color: #222;
+      font-size: 16px;
+      letter-spacing: -1px;
+      line-height: 21px;
+    }
+    .contact_form .contact_input .box_input{
       overflow: hidden;
       display: block;
-      margin-top: 12px;
       font-size: 16px;
       line-height: 30px;
       color: #444;
@@ -238,12 +253,12 @@
       border: 1px solid #dfdfdf;
       box-sizing: border-box;
     }
-    .contact_form .info_contact .select-group{
+    .contact_form .contact_input .select-group{
       display: inline;
       float: left;
       margin: 12px 10px 0 0;
     }
-    .contact_form .info_contact #company_location{
+    .contact_form .contact_input #company_location{
       width: 235px;
     }
     /* contact */
@@ -266,29 +281,43 @@
       letter-spacing: -2px;
       line-height: 34px;
     }
-    .login_form .info_login{
+
+    .login_form{
+      position: relative;
+      padding: 50px 0 25px;
       display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      overflow: hidden;
     }
-    .login_form .info_login dt{
+    .login_row{
+      position: relative;
+      padding: 0 49px 25px;
+      display: block;
+    }
+    .login_row:after{
+      display: table;
+      clear: both;
+      content: "";
+      table-layout: fixed;
+    }
+    .login_form .login_row .login_list{
       float: left;
-      margin-top: 12px;
-      width: 120px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      color: #444;
+      padding-top: 15px;
+      width: 150px;
+      color: #222;
+      font-size: 16px;
       letter-spacing: -1px;
+      line-height: 21px;
       display: block;
     }
-    .login_form .info_login .box_input{
+    .login_form .login_row .login_input{
+      padding-top: 15px;
+      color: #222;
+      font-size: 16px;
+      letter-spacing: -1px;
+      line-height: 21px;
+    }
+    .login_form .login_row .box_input{
       overflow: hidden;
       display: block;
-      margin-top: 12px;
       font-size: 16px;
       line-height: 30px;
       color: #444;
@@ -388,7 +417,7 @@
         </div>
         <div class="basic_form">
           <div class="info_img">
-            <form method="post" action="/resume_detail" enctype="multipart/form-data">
+            <form method="post" action="#" enctype="multipart/form-data">
               <label for="files">파일 선택</label>
               <input type="file" name="file" id="files" class="hidden"/>
               <button type="submit">파일전송</button>
@@ -411,22 +440,38 @@
           <h2 class="title">담당자 연락처</h2>
         </div>
         <div class="contact_form">
-          <dl class="info_contact">
-            <dt class="info_list_item">휴대폰</dt>
-            <input type="text" id="company_tel" name="company_tel" class="box_input" value="010-0000-0000" placeholder="휴대폰 번호을 입력하세요"/>
-            <dt class="info_list_item">이메일</dt>
-            <input type="text" id="company_email" name="company_email" class="box_input" value="green@nate.com" placeholder="이메일을 입력하세요"/>
-            <dt class="info_list_item">기업 주소</dt>
-            <div class="select-group">
-              <select>
-                <option>부산</option>
-                <option>서울</option>
-                <option>대전</option>
-                <option>광주</option>
-              </select>
+          <div class="contact_row">
+            <div class="contact_list">
+              <p class="contact_list_item">휴대폰</p>
             </div>
-            <input type="text" id="company_location" name="company_location" class="box_input" value="금정구" placeholder="상세주소를 입력하세요"/>
-          </dl>
+            <div class="contact_input">
+              <input type="text" id="company_tel" name="company_tel" class="box_input" value="010-0000-0000" placeholder="휴대폰 번호을 입력하세요"/>
+            </div>
+          </div>
+          <div class="contact_row">
+            <div class="contact_list">
+              <p class="contact_list_item">이메일</p>
+            </div>
+            <div class="contact_input">
+              <input type="text" id="company_email" name="company_email" class="box_input" value="green@nate.com" placeholder="이메일을 입력하세요"/>
+            </div>
+          </div>
+          <div class="contact_row">
+            <div class="contact_list">
+              <p class="contact_list_item">기업 주소</p>
+            </div>
+            <div class="contact_input">
+              <div class="select-group">
+                <select>
+                  <option>부산</option>
+                  <option>서울</option>
+                  <option>대전</option>
+                  <option>광주</option>
+                </select>
+              </div>
+              <input type="text" id="company_location" name="company_location" class="box_input" value="금정구" placeholder="상세주소를 입력하세요"/>
+            </div>
+          </div>
         </div>
       </div>
       <!-- contact -->
@@ -436,12 +481,22 @@
           <h2 class="title">로그인 정보</h2>
         </div>
         <div class="login_form">
-        <dl class="info_login">
-          <dt class="info_list_item">ID</dt>
-          <input type="text" id="company_id" name="company_id" class="box_input" value="ssar" placeholder="아이디를 입력하세요"/>
-          <dt class="info_list_item">Password</dt>
-          <input type="text" id="company_password" name="company_password" class="box_input" value="1234" placeholder="비밀번호를 입력하세요"/>
-        </dl>
+          <div class="login_row">
+            <div class="login_list">
+              <p class="login_list_item">ID</p>
+            </div>
+            <div class="login_input">
+              <input type="text" id="company_id" name="company_id" class="box_input" value="ssar" placeholder="아이디를 입력하세요"/>
+            </div>
+          </div>
+          <div class="login_row">
+            <div class="login_list">
+              <p class="login_list_item">Password</p>
+            </div>
+            <div class="login_input">
+              <input type="text" id="company_password" name="company_password" class="box_input" value="1234" placeholder="비밀번호를 입력하세요"/>
+            </div>
+          </div>
         </div>
       </div>
       <!-- login -->
