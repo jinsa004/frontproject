@@ -9,7 +9,7 @@ public class TestController {
 
     @GetMapping("/mypageInsertForm")
     public String mypageResumeInsert() {
-        return "user/mypageInsertForm";
+        return "mypage/mypageInsertForm";
     }
 
     @GetMapping("/recruitDetail")
