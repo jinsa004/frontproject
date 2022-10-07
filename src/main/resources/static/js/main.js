@@ -133,3 +133,19 @@ function popCloseCompany2() {
   $(modalPop).hide();
   $(modalBg).hide();
 }
+
+function popOpenRecruit() {
+  let modalPop = $(".modal_select_wrap");
+  let modalBg = $(".modal_select_bg");
+
+  $(modalPop).show();
+  $(modalBg).show();
+}
+function popCloseRecruit() {
+  let modalPop = $(".modal_select_wrap");
+  let modalBg = $(".modal_select_bg");
+
+  $(modalPop).hide();
+  $(modalBg).hide();
+}
+

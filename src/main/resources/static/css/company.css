@@ -486,7 +486,7 @@ table{
 .modal_login_wrap, .modal_join_wrap {
     display: none;
     position: absolute;
-    top: 16%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 300px;
@@ -498,8 +498,8 @@ table{
 }
 .modal_join_wrap{
     width: 600px;
-    top: 0;
-    transform: translate(-50%, 5%);
+    top: 7%;
+    transform: translate(-50%, 0);
     border-radius: 20px;
     padding: 35px 35px 65px;
 }

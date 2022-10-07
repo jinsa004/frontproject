@@ -123,6 +123,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                   name="resume_select"
                   id="resume_select"
                   value=""
+                  checked
                 />
               </span>
               <label for="resume_select" class="resume_select_box">
@@ -132,15 +133,32 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 <span class="career">신입</span>
                 <span class="part">프론트엔드, 백엔드, 풀스택</span>
               </label>
-            </li>
+            </li><!-- .resume_select_cont -->
+            <li class="resume_select_cont">
+              <span class="input_radio">
+                <input
+                  type="radio"
+                  name="resume_select"
+                  id="resume_select"
+                  value=""
+                />
+              </span>
+              <label for="resume_select" class="resume_select_box">
+                <span class="tit"
+                  >최상의 결과를 이끌어 낼 4조 개발자들 화이팅</span
+                >
+                <span class="career">신입</span>
+                <span class="part">프론트엔드, 백엔드, 풀스택</span>
+              </label>
+            </li><!-- .resume_select_cont -->
           </ul>
-        </div>
+        </div><!-- .form_box -->
         <button id="btn_recruit" type="button" class="btn btn-primary">
           지원하기
         </button>
       </div>
-      <!-- .modal_select_wrap -->
-      <!-- .recruit_detail_box -->
+      <!-- .modal_select_wrap -->     
+      </div><!-- .recruit_detail_box -->
     </div>
     <!-- .container -->
   </div>
