@@ -8,7 +8,7 @@ body{
 }
 .container{
   width: 1200px;
-  background-color: antiquewhite;
+  background-color: #fff;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -16,14 +16,13 @@ body{
 }
 .row{
   width: 1200px;
-  background-color: aliceblue;
+  background-color: #fff;
   padding-top: 80px;
 }
 .menu{
   float: left;
   width: 300px;
   text-align: left;
-  margin-bottom: 1300px;
 }
 /* 전체 */
 
@@ -77,7 +76,7 @@ body{
 /* menu */
 
 .users_info{
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 .users_info #basic_info{
   position: relative;
@@ -418,7 +417,7 @@ min-height: 33px;
 }
 /* menu */
 .resume_update{
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 .resume_update .resume_title{
   margin: 40px 0 60px;
@@ -809,7 +808,7 @@ min-height: 33px;
 /* resume_detail 시작 */
 
 .resume_detail{
-  background-color: antiquewhite;
+  background-color: #fff;
   width: 1000px;
   margin: 0 auto;
 }
@@ -1108,7 +1107,7 @@ min-height: 33px;
 /* form */
 
 .notice_update{
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 .notice_update #notice_info{
   position: relative;
@@ -1239,7 +1238,7 @@ min-height: 33px;
 /* form */
 
 .notice_save{
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 .notice_save #notice_info{
   position: relative;
@@ -1383,7 +1382,7 @@ min-height: 33px;
 /* menu */
 
 .company_info{
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 
 .company_info #basic_info{
@@ -1676,7 +1675,7 @@ min-height: 33px;
 /* menu */
 
 .company_update{
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 .company_update #logo_info{
   position: relative;
@@ -1973,7 +1972,7 @@ min-height: 33px;
 /* update_btn */
 
 .company_detail{
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 .company_detail #logo_info{
   position: relative;
