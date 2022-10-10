@@ -614,11 +614,25 @@ min-height: 33px;
   box-sizing: border-box;
 }
 .resume_update #edu .resume_edu .edu_form .edu_row .edu_input #start_date{ 
+  width: 150px;
+  margin-inline-start: 0px;
+  float: left;
 }
-
 .resume_update #edu .resume_edu .edu_form .edu_row .edu_input #end_date{
+  width: 150px;
+  margin-left: 30px;
+  display: inline-block;
 }
-
+.resume_update #edu .resume_edu .edu_form .edu_row .edu_input #grades{ 
+  width: 150px;
+  margin-inline-start: 0px;
+  float: left;
+}
+.resume_update #edu .resume_edu .edu_form .edu_row .edu_input p{
+  margin-left: 20px;
+  display: inline-block;
+  line-height: 28px;
+}
 /* edu */
 
 .resume_update #career{
@@ -715,9 +729,14 @@ min-height: 33px;
 }
 
 .resume_update #career .resume_career .career_form .career_row .career_input #start_date{ 
+  width: 150px;
+  margin-inline-start: 0px;
+  float: left;
 }
-
 .resume_update #career .resume_career .career_form .career_row .career_input #end_date{
+  width: 150px;
+  margin-left: 30px;
+  display: inline-block;
 }
 /* career */
 

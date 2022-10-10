@@ -179,7 +179,7 @@
                   <p class="edu_list_item">졸업학점</p>
                 </div>
                 <div class="edu_input">
-                  <input type="text" id="grades" name="grades" class="box_input" placeholder="학점 입력"/><span>/4.5</span>
+                  <input type="text" id="grades" name="grades" class="box_input" placeholder="학점 입력"/><p>/ 4.5</p>
                 </div>
               </div>
               
