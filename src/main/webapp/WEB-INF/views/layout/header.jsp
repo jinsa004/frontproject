@@ -26,7 +26,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       <div class="header_wrap">
         <header>
           <div class="logo">
-            <a href="#">PROJECT_4</a>
+            <a href="/main">PROJECT_4</a>
           </div>
           <!-- .logo -->
 

@@ -293,6 +293,7 @@ table{
 .notice_box .notice_inner ul li:nth-child(2){
     width: 600px;
     padding-left: 25px;
+    padding-bottom: 68px;
 }
 .notice_box .notice_inner ul li:nth-child(3){
     width: 160px;
