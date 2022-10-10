@@ -57,7 +57,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                         <li class="career">
                           <span>경력 1년</span>
                         </li>
-                        <li class="part"><span>프론트엔드, 백엔드, 풀스택</span></li>
+                        <li class="part"><span>프론트엔드</span></li>
                       </ul>
                     </div>
                   </div>
@@ -79,7 +79,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                         <li class="career">
                           <span>신입</span>
                         </li>
-                        <li class="part"><span>프론트엔드, 백엔드, 풀스택</span></li>
+                        <li class="part"><span>프론트엔드, 백엔드, 풀스택,프론트엔드, 백엔드, 풀스택</span></li>
                       </ul>
                     </div>
                   </div>
