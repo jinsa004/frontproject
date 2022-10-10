@@ -9,7 +9,7 @@
 
     <body>
 
-        <img src="/image/test" />
+        <img src="/image?imageName=test.png" alt="이미지 확인하기" width="300px" />
 
         <h1>사진업로드테스트</h1>
 

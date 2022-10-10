@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -39,9 +40,9 @@ public class UploadController {
         return "/upload";
     }
 
-    @GetMapping("/image/{newImageName}")
-    public ResponseEntity<Resource> getImage(@PathVariable("newImageName") String newImageName) throws Exception {
-        String absolutePath = new File("resources/static/images/").getAbsolutePath();
+    @GetMapping("/image")
+    public ResponseEntity<Resource> getImage(@RequestParam("imageName") String newImageName) throws Exception {
+        String absolutePath = "src/main/resources/static/images/";
         FileSystemResource resource = new FileSystemResource(absolutePath + newImageName);
         if (!resource.exists()) {
             return null;
