@@ -40,20 +40,21 @@
 
 <div class="container">
   <div class="row">
+
     <div class="menu">
       <div class="employ_list">
         <ul>
           <li class="employ_list_item">
             <a href="#">이력서 관리</a>
           </li>
-            <ul class="resume_list">
-              <li class="resume_list_item">
-                <a href="/resume_update">이력서 등록</a>
-              </li>
-              <li class="resume_list_item">
-                <a href="#">이력서 관리</a>
-              </li>
-            </ul>
+          <ul class="resume_list">
+            <li class="resume_list_item">
+              <a href="/resume_update">이력서 등록</a>
+            </li>
+            <li class="resume_list_item">
+              <a href="#">이력서 관리</a>
+            </li>
+          </ul>
           <li class="employ_list_item">
             <a href="/users_info">회원정보 관리</a>
           </li>
@@ -66,27 +67,36 @@
 
       <div id="basic_info" class="form">
         <div class="form_title">
-          <h2 class="title">기본정보</h2>
+          <h2 class="title">기본 정보</h2>
         </div>
         <div class="basic_form">
-          <div class="info_img">
-            <form method="post" action="/resume_detail" enctype="multipart/form-data">
-              <label for="files">파일 선택</label>
-              <input type="file" name="file" id="files" class="hidden"/>
-              <button type="submit">파일전송</button>
-            </form>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">이름</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="user_name" name="user_name" class="box_input" value="홍길동" placeholder="이름을 입력하세요"/>
+            </div>
           </div>
-          <dl class="info_basic">
-            <dt class="info_list_item">이름</dt>
-            <input type="text" id="user_name" name="user_name" class="box_input" value="홍길동" placeholder="이름을 입력하세요"/>
-            <dt class="info_list_item">생년월일</dt>
-            <input type="text" id="user_birth" name="user_birth" class="box_input" value="2000년 00월 00일" placeholder="생년월일을 입력하세요"/>
-            <dt class="info_list_item">성별</dt>
-            <input type="text" id="user_sex" name="user_sex" class="box_input" value="남성" placeholder="셩별을 입력하세요"/>
-          </dl>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">생년월일</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="user_birth" name="user_birth" class="box_input" value="2000년 00월 00일" placeholder="생년월일을 입력하세요"/>
+            </div>
+          </div>
+          <div class="basic_row">
+            <div class="basic_list">
+              <p class="basic_list_item">성별</p>
+            </div>
+            <div class="basic_input">
+              <input type="text" id="user_sex" name="user_sex" class="box_input" value="남성" placeholder="셩별을 입력하세요"/>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- info -->
+      <!-- basic -->
 
       <div id="contact_info" class="form">
         <div class="form_title">
@@ -156,7 +166,7 @@
 
       <div id="field_info" class="form">
         <div class="form_title">
-          <h2 class="title">관심분야</h2>
+          <h2 class="title">관심 분야</h2>
         </div>
         <div class="field_select">
             <form method="post" action="/#">
