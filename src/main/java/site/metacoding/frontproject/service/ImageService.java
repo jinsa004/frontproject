@@ -20,13 +20,13 @@ public class ImageService {
     public ImageDto insertImage(MultipartFile image) throws Exception {
         // 파일이 빈 것이 들어오면 빈 것을 반환
         if (image.isEmpty()) {
-            // return ;
+            return null;
         }
 
         // save할 반환 파일 띄우기
         ImageDto imageDto = new ImageDto();
 
-        String absolutePath = new File("resources/static/images/").getAbsolutePath();
+        String absolutePath = new File("src/main/resources/static/images/").getAbsolutePath();
 
         File file = new File(absolutePath);
         // 저장할 위치의 디렉토리가 존재하지 않을 경우
