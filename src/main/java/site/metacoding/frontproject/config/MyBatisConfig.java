@@ -26,6 +26,7 @@ public class MyBatisConfig {
         
         org.apache.ibatis.session.Configuration config = 
               new org.apache.ibatis.session.Configuration();
+
         config.setMapUnderscoreToCamelCase(true);
         sessionFactory.setConfiguration(config);
         return sessionFactory.getObject();
