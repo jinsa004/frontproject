@@ -178,7 +178,7 @@
 
       <div class="btn_group_update">
         <div class="update_btn">
-          <button type="button" onclick="location.href='#'">공고등록</button>
+          <button type="button" onclick="location.href='#'">수정완료</button>
         </div>
       </div>
       <!-- update_btn -->
