@@ -1172,22 +1172,24 @@ min-height: 33px;
 }
 /* contact */
 
-.notice_update .btn_group{
+.notice_update .btn_group_update{
   float: right;
 }
-.notice_update .btn_group .update_btn{
+.notice_update .btn_group_delete{
+  text-align: right;
+}
+.notice_update .btn_group_update .update_btn{
   margin: 15px 0;
   width: 150px;
   height: 50px;
   display: inline-block;
 }
-.notice_update .btn_group .delete_btn{
-  margin-top: 15px;
+.notice_update .btn_group_delete .delete_btn{
   width: 150px;
   height: 50px;
   display: inline-block;
 }
-.notice_update .btn_group button{
+.notice_update button{
   border: 1px solid #4876ef;
   background-color: #4876ef;
   color: #fff;

@@ -43,7 +43,7 @@
     <div class="notice_update">
 
       <div id="notice_info" class="form">
-        <div class="btn_group">
+        <div class="btn_group_delete">
           <div class="delete_btn">
             <button type="button" onclick="location.href='#'">공고삭제</button>
           </div>
@@ -176,7 +176,7 @@
       </div>
       <!-- basic -->
 
-      <div class="btn_group">
+      <div class="btn_group_update">
         <div class="update_btn">
           <button type="button" onclick="location.href='#'">공고등록</button>
         </div>
