@@ -6,14 +6,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class NoticeController {
 
-    @GetMapping("/notice_save")
-    public String 공고등록() {
-        return "notice/notice_save";
+    @GetMapping("emp/noticeDetail")
+    public String recruitDetail() {//개인회원 입장에서 채용공고 상세보기
+        return "employee/noticeDetail";
     }
 
-    @GetMapping("/notice_update")
+    @GetMapping("co/noticeDetail")
+    public String noticeDetail() {//기업회원 입장에서 채용공고 상세보기
+        return "company/noticeDetail";
+    }
+
+    @GetMapping("co/noticeSave")
+    public String 공고등록() {
+        return "notice/noticeSave";
+    }
+
+    @GetMapping("co/noticeUpdate")
     public String 공고수정() {
-        return "notice/notice_update";
+        return "notice/noticeUpdate";
     }
 
 }

@@ -404,8 +404,8 @@ table{
     border-radius: 0 5px 5px 0;
 }
 .paging ul li.active{
-    border-color: #435070;f;
-    background: #435070;;
+    border-color: #435070;
+    background: #435070;
 }
 .paging ul li.active a{
     color: #fff;

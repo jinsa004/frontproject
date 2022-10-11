@@ -18,7 +18,6 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     ></script>
-
     <title>4조 PROJECT</title>
   </head>
   <body>
@@ -26,7 +25,7 @@ uri="http://java.sun.com/jsp/jstl/core"%>
       <div class="header_wrap">
         <header>
           <div class="logo">
-            <a href="/main">PROJECT_4</a>
+            <a href="/emp/main">PROJECT_4</a>
           </div>
           <!-- .logo -->
 
@@ -61,7 +60,9 @@ uri="http://java.sun.com/jsp/jstl/core"%>
             >
               회원가입
             </button>
-            <a href="/mainCompany" class="btn_company">기업 서비스</a
+            <a href="/emp/mypageInsertForm" class="btn_company">마이 페이지</a
+              >
+            <a href="/co/mainCompany" class="btn_company">기업 서비스</a
             ><!-- .btn_company -->
           </div>
           <!-- .login_box -->
@@ -69,16 +70,16 @@ uri="http://java.sun.com/jsp/jstl/core"%>
           <nav>
             <ul>
               <li>
-                <a href="/main">채용공고</a>
+                <a href="/emp/main">채용공고</a>
               </li>
               <li>
-                <a href="/matching">매칭리스트</a>
+                <a href="/emp/matchingNotice">매칭리스트</a>
               </li>
               <li>
-                <a href="/subscription">구독기업공고</a>
+                <a href="/emp/subscription">구독기업공고</a>
               </li>
               <li>
-                <a href="/companyList">기업정보</a>
+                <a href="/emp/companyList">기업정보</a>
               </li>
             </ul>
           </nav>

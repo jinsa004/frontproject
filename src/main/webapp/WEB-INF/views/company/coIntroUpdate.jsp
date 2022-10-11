@@ -1,62 +1,5 @@
-<!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
-<html lang="en">
-<head>
-  <title>기업 소개 입력</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-  <link href="css/reset.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-</head>
-
-<body>
-
-<div class="p-5 border text-center">
-  <h1>기업 소개 입력</h1>
-</div>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">인재 검색</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">공고등록</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">공고/지원자 관리</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">매칭리스트</a>
-      </li>
-    </ul>
-  </div>
-</nav> 
-<!-- header -->
-
-<div class="container">
-  <div class="row">
-    <div class="menu">
-      <div class="company_list">
-        <ul>
-          <li class="company_list_item">
-            <a href="#">기업 소개</a>
-          </li>
-          <li class="company_list_item">
-            <a href="#">공고 관리</a>
-          </li>
-          <li class="company_list_item">
-            <a href="#">회원 정보 관리</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- menu -->
-
+<%@ include file="../layout/headerMypageCompany.jsp"%>
     <div class="company_update">
 
       <div id="logo_info" class="form">
@@ -190,47 +133,39 @@
   </div>
 </div>
 <!-- body -->
-
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
-<!-- footer -->
-
-</body>
-
 <script>
-    function sample6_execDaumPostcode() {
-        new daum.Postcode({
-            oncomplete: function(data) {
-                var addr = ''; 
-                var extraAddr = '';
+  function sample6_execDaumPostcode() {
+      new daum.Postcode({
+          oncomplete: function(data) {
+              var addr = ''; 
+              var extraAddr = '';
 
-                if (data.userSelectedType === 'R') {
-                    addr = data.roadAddress;
-                } else {
-                    addr = data.jibunAddress;
-                }
+              if (data.userSelectedType === 'R') {
+                  addr = data.roadAddress;
+              } else {
+                  addr = data.jibunAddress;
+              }
 
-                if(data.userSelectedType === 'R'){
-                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-                        extraAddr += data.bname;
-                    }
-                    if(data.buildingName !== '' && data.apartment === 'Y'){
-                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-                    }
-                    if(extraAddr !== ''){
-                        extraAddr = ' (' + extraAddr + ')';
-                    }
-                    document.getElementById("sample6_extraAddress").value = extraAddr;
-                } else {
-                    document.getElementById("sample6_extraAddress").value = '';
-                }
+              if(data.userSelectedType === 'R'){
+                  if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                      extraAddr += data.bname;
+                  }
+                  if(data.buildingName !== '' && data.apartment === 'Y'){
+                      extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                  }
+                  if(extraAddr !== ''){
+                      extraAddr = ' (' + extraAddr + ')';
+                  }
+                  document.getElementById("sample6_extraAddress").value = extraAddr;
+              } else {
+                  document.getElementById("sample6_extraAddress").value = '';
+              }
 
-                document.getElementById('sample6_postcode').value = data.zonecode;
-                document.getElementById("sample6_address").value = addr;
-                document.getElementById("sample6_detailAddress").focus();
-            }
-        }).open();
-    }
+              document.getElementById('sample6_postcode').value = data.zonecode;
+              document.getElementById("sample6_address").value = addr;
+              document.getElementById("sample6_detailAddress").focus();
+          }
+      }).open();
+  }
 </script>
-</html>
+<%@ include file="../layout/footerCompany.jsp"%>

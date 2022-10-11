@@ -26,32 +26,26 @@ uri="http://java.sun.com/jsp/jstl/core"%>
 <div id="mypage_wrap">
 <div id="gnb_mypage">
   <div class="logo">
-    <a href="/emp/main">PROJECT_4</a>
+    <a href="/co/main">PROJECT_4</a>
   </div>
   <ul class="gnb_left">
       <li class="gnb_list1">
-          <a href="/emp/resumeSave">
+          <a href="/co/companyIntroUpdate">
             <i class="fa-regular fa-paper-plane"></i>
-            <span class="txt">이력서 등록</span>
+            <span class="txt">기업소개 관리</span>
           </a>
       </li>
       <li class="gnb_list2">
-          <a href="/emp/resumeUpdate">
+          <a href="/co/noticeDetail">
             <i class="fa-regular fa-pen-to-square"></i>
-            <span class="txt">이력서 관리</span>
+            <span class="txt">공고 관리</span>
           </a>
       </li>
       <li class="gnb_list3">
-        <a href="/emp/employeeInfo">
+        <a href="/co/companyInfo">
           <i class="fa-regular fa-star"></i>
-          <span class="txt">관심분야 관리</span>
+          <span class="txt">회원정보 관리(수정/탈퇴)</span>
         </a>
-    </li>
-    <li class="gnb_list4">
-      <a href="/emp/employeeInfo">
-          <i class="fa-regular fa-user"></i>
-          <span class="txt">회원정보관리(수정/탈퇴)</span>
-      </a>
     </li>
   </ul>
 </div><!-- .gnb_mypage -->

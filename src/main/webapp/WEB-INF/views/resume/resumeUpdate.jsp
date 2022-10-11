@@ -1,66 +1,5 @@
-<!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
-<html lang="en">
-<head>
-  <title>이력서 등록보기</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-  <link href="css/reset.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-</head>
-
-<body>
-
-<div class="p-5 border text-center">
-  <h1>이력서 등록하기</h1>
-</div>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">채용 공고</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">매칭 리스트</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">구독 기업 공고</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">기업정보</a>
-      </li>
-    </ul>
-  </div>
-</nav> 
-<!-- header -->
-
-<div class="container">
-    <div class="row">
-      <div class="menu">
-        <div class="employ_list">
-          <ul>
-            <li class="employ_list_item">
-              <a href="#">이력서 관리</a>
-            </li>
-              <ul class="resume_list">
-                <li class="resume_list_item">
-                  <a href="/resume_update">이력서 등록</a>
-                </li>
-                <li class="resume_list_item">
-                  <a href="#">이력서 관리</a>
-                </li>
-              </ul>
-            <li class="employ_list_item">
-              <a href="/users_info">회원정보 관리</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- menu -->
+<%@ include file="../layout/headerMypage.jsp"%>
 
       <div class="resume_update">
 
@@ -269,21 +208,20 @@
         <!-- field -->
 
         <div class="update_btn">
-          <button type="button" onclick="location.href='#'">등록완료</button>
+          <button type="button" onclick="location.href='#'">수정완료</button>
         </div>
         <!-- update -->
+
+        <div class="delete_btn">
+          <button type="button" onclick="location.href='#'">삭제하기</button>
+        </div>
+        <!-- delete -->
 
       </div>
       <!-- resume_update -->
     </div>
 </div>
 <!-- body -->
-
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
-</div>
-<!-- footer -->
-
 <script>
   function show_highschool(){ 	
       var con1 = document.getElementById("highschool");
@@ -356,5 +294,6 @@
       } 
   }
   </script>
-</body>
-</html>
+
+<%@ include file="../layout/footer.jsp"%>
+

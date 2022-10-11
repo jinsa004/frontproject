@@ -3,16 +3,9 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
 
 <div id="user_wrap">
   <div class="container">
-    <div class="tablist">
-      <ul class="tabs">
-        <li class="btn_tab on" data-tab="tab-1">전체직군</li>
-        <li class="btn_tab" data-tab="tab-2">프론트엔드</li>
-        <li class="btn_tab" data-tab="tab-3">백엔드</li>
-        <li class="btn_tab" data-tab="tab-4">웹풀스택</li>
-        <li class="btn_tab" data-tab="tab-5">안드로이드</li>
-        <li class="btn_tab" data-tab="tab-6">IOS</li>
-      </ul>
-    </div>
+    <!-- <div class="matching_list">
+      <a href="#" class="btn_matching_insert">구독기업공고 관리</a>
+    </div> -->
     <!-- .tablist -->
 
     <section>
@@ -29,8 +22,8 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
         <div id="tab-1" class="notice_inner notice_inner1 tab-content on">
           <div>
             <ul>
-              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
-              <li><a href="#">
+              <li><a href="noticeDetail"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="noticeDetail">
                 보안/운영 시스템 개발팀 백엔드 개발자 모집
                 <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
               </a></li>
@@ -41,8 +34,8 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
           </div>
           <div>
             <ul>
-              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
-              <li><a href="#">
+              <li><a href="noticeDetail"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="noticeDetail">
                 보안/운영 시스템 개발팀 백엔드 개발자 모집
                 <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
               </a></li>
@@ -53,8 +46,8 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
           </div>
           <div>
             <ul>
-              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
-              <li><a href="#">
+              <li><a href="noticeDetail"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="noticeDetail">
                 보안/운영 시스템 개발팀 백엔드 개발자 모집
                 <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
               </a></li>
