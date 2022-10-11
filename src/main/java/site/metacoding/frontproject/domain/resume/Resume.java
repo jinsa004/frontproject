@@ -2,9 +2,12 @@ package site.metacoding.frontproject.domain.resume;
 
 import java.sql.Timestamp;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor
 @Setter
 @Getter
 public class Resume {
@@ -20,7 +23,7 @@ public class Resume {
     private Integer univStartdate;
     private Integer univEnddate;
     private String univMajor;
-    private float univGrade;
+    private float univGrades;
     private String prevCo;
     private String careerPeriod;
     private String careerPosition;
@@ -29,4 +32,5 @@ public class Resume {
     private Integer jobId;
     private boolean isMain;
     private Timestamp createdAt;
+
 }
