@@ -54,7 +54,7 @@ public class ImageService {
                     return null;
                 }
             }
-            String newImageName = Long.toString(System.nanoTime()) + originalImageExtension;
+            String newImageName = UUID.randomUUID().toString() + originalImageExtension;
 
             // DTO에 담기
             imageDto = ImageDto.builder()
