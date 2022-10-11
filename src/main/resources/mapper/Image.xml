@@ -7,7 +7,7 @@
 		VALUES(#{originImageName}, #{newImageName}, #{imagePath})
     </insert>
 
-    <select id = "getImage" resultType = "site.metacoding.frontproject.domain.Image.Image">
+    <select id="getImageById" resultType="site.metacoding.frontproject.domain.Image.Image">
         SELECT * from image
         WHERE id = #{id};
     </select>

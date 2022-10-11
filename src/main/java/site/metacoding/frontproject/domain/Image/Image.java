@@ -1,6 +1,5 @@
 package site.metacoding.frontproject.domain.Image;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,12 +12,4 @@ public class Image {
     private String originImageName;
     private String newImageName;
     private String imagePath;
-
-    @Builder
-    public Image(String originImageName, String newImageName, String imagePath) {
-        this.originImageName = originImageName;
-        this.newImageName = newImageName;
-        this.imagePath = imagePath;
-    }
-
 }

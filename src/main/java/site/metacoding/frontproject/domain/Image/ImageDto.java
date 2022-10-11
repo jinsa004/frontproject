@@ -20,13 +20,4 @@ public class ImageDto {
         this.imagePath = imagePath;
     }
 
-    public Image toEntity() {
-        Image build = Image.builder()
-                .originImageName(originImageName)
-                .newImageName(newImageName)
-                .imagePath(imagePath)
-                .build();
-        return build;
-    }
-
 }

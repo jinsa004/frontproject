@@ -5,6 +5,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import lombok.RequiredArgsConstructor;
@@ -17,30 +18,25 @@ public class ImageService {
 
     private final ImageDao imageDao;
 
-    public ImageDto insertImage(MultipartFile image) throws Exception {
-        // 파일이 빈 것이 들어오면 빈 것을 반환
+    public void insertImage(MultipartFile image) throws Exception {
+        // 파일이 빈 것이 들어오면 메서드 종료
         if (image.isEmpty()) {
-            return null;
+            return;
         }
 
-        // save할 반환 파일 띄우기
+        // save할 DTO 띄우기
         ImageDto imageDto = new ImageDto();
 
+        // 절대경로 추출
         String absolutePath = new File("src/main/resources/static/images/").getAbsolutePath();
-
-        File file = new File(absolutePath);
-        // 저장할 위치의 디렉토리가 존재하지 않을 경우
-        if (!file.exists()) {
-            file.mkdirs();
-        }
 
         // jpeg, png, gif 파일들만 받아서 처리
         if (!image.isEmpty()) {
             String contentType = image.getContentType();
             String originalImageExtension;
-            // 확장자 명이 없으면 break
-            if (ObjectUtils.isEmpty(contentType)) {
-                return null;
+            // 확장자 명이 없으면 종료
+            if (!StringUtils.hasText(contentType)) {
+                return;
             } else {
                 if (contentType.contains("image/jpeg")) {
                     originalImageExtension = ".jpg";
@@ -49,9 +45,9 @@ public class ImageService {
                 } else if (contentType.contains("image/gif")) {
                     originalImageExtension = ".gif";
                 }
-                // 기타 확장자명일 경우 break
+                // 기타 확장자명일 경우 메서드 종료
                 else {
-                    return null;
+                    return;
                 }
             }
             String newImageName = UUID.randomUUID().toString() + originalImageExtension;
@@ -65,10 +61,12 @@ public class ImageService {
 
             imageDao.save(imageDto);
 
-            // 저장된 파일로 변경하여 이를 보여주기 위함
-            file = new File(absolutePath + "/" + newImageName);
+            // 파일을 전송하기
+            File file = new File(absolutePath + "/" + newImageName);
+            if (!file.exists()) {
+                file.mkdirs();
+            }
             image.transferTo(file);
         }
-        return imageDto;
     }
 }
