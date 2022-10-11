@@ -166,4 +166,3 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
 
   <script src="/js/main.js"></script>
   <%@ include file="../layout/footer.jsp"%>
-</div>

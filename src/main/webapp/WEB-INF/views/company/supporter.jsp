@@ -34,7 +34,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
               <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
             </ul>
             <div class="notice_hover">
-              <span><a href="#">공고관리</a></span>
+              <span><a href="noticeDetail">공고관리</a></span>
               <span><a href="#">지원자관리</a></span>
             </div>
             <!-- .notice_hover -->
@@ -57,7 +57,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
               <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
             </ul>
             <div class="notice_hover">
-              <span><a href="#">공고관리</a></span>
+              <span><a href="noticeDetail">공고관리</a></span>
               <span><a href="#">지원자관리</a></span>
             </div>
             <!-- .notice_hover -->
@@ -80,9 +80,9 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
               <li>~10/19(수)<span class="notice_small">마감 13일전</span></li>
             </ul>
             <div class="notice_hover">
-              <span><a href="#">공고관리</a></span>
+              <span><a href="noticeDetail">공고관리</a></span>
               <span
-                ><a href="/src/main/webapp/WEB-INF/views/company/resumeList.jsp"
+                ><a href="#"
                   >지원자관리</a
                 ></span
               >

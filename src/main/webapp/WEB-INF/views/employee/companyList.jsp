@@ -21,7 +21,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
           <div id="tab-1" class="company_inner company_inner1 tab-content on">
             <ul>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_1.png" alt="회사로고"
                   /></span>
@@ -33,7 +33,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_2.jpg" alt="회사로고"
                   /></span>
@@ -45,7 +45,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_1.png" alt="회사로고"
                   /></span>
@@ -57,7 +57,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_2.jpg" alt="회사로고"
                   /></span>
@@ -71,7 +71,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
             </ul>
             <ul>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_1.png" alt="회사로고"
                   /></span>
@@ -83,7 +83,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_2.jpg" alt="회사로고"
                   /></span>
@@ -95,7 +95,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_1.png" alt="회사로고"
                   /></span>
@@ -107,7 +107,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_2.jpg" alt="회사로고"
                   /></span>
@@ -136,7 +136,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_2.jpg" alt="회사로고"
                   /></span>
@@ -148,7 +148,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_1.png" alt="회사로고"
                   /></span>
@@ -160,7 +160,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="companyIntroDetail">
                   <span class="company_logo"
                     ><img src="/img/logo_2.jpg" alt="회사로고"
                   /></span>

@@ -4,7 +4,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
 <div id="user_wrap">
   <div class="container">
     <div class="matching_list">
-      <a href="#" class="btn_matching_insert"> 관심 분야 수정</a>
+      <a href="/emp/employeeInfo" class="btn_matching_insert"> 관심 분야 수정</a>
     </div>
     <!-- .tablist -->
 
@@ -22,8 +22,8 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
         <div id="tab-1" class="notice_inner notice_inner1 tab-content on">
           <div>
             <ul>
-              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
-              <li><a href="#">
+              <li><a href="noticeDetail"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="noticeDetail">
                 보안/운영 시스템 개발팀 백엔드 개발자 모집
                 <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
               </a></li>
@@ -34,8 +34,8 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
           </div>
           <div>
             <ul>
-              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
-              <li><a href="#">
+              <li><a href="noticeDetail"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="noticeDetail">
                 보안/운영 시스템 개발팀 백엔드 개발자 모집
                 <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
               </a></li>
@@ -46,8 +46,8 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/header.jsp"%>
           </div>
           <div>
             <ul>
-              <li><a href="#"><img src="/img/logo_1.png" alt="logo"></a></li>
-              <li><a href="#">
+              <li><a href="noticeDetail"><img src="/img/logo_1.png" alt="logo"></a></li>
+              <li><a href="noticeDetail">
                 보안/운영 시스템 개발팀 백엔드 개발자 모집
                 <span class="notice_small">백엔드/서버개발, 웹개발, 정보보안</span>
               </a></li>

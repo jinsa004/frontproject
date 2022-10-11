@@ -5,7 +5,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
   <div class="container">
     <section>
       <div class="matching_list">
-        <a href="#" class="btn_matching_insert"> 관심 분야 수정</a>
+        <a href="/co/companyInfo" class="btn_matching_insert"> 관심 분야 수정</a>
       </div>
       <!-- .tablist -->
 
@@ -14,7 +14,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
           <div class="resume_form resume_card">
             <ul id="tab-1" class="resume_inner resume_inner1 tab-content on">
               <li class="resume_cont">
-                <a href="#">
+                <a href="resumeDetail">
                   <span class="resume_logo"
                     ><img src="/img/default_profile.png" alt="프로필이미지"
                   /></span>
@@ -36,7 +36,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                 </a>
               </li>
               <li class="resume_cont">
-                <a href="#">
+                <a href="resumeDetail">
                   <span class="resume_logo"
                     ><img src="/img/default_profile.png" alt="프로필이미지"
                   /></span>
@@ -58,7 +58,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                 </a>
               </li>
               <li class="resume_cont">
-                <a href="#">
+                <a href="resumeDetail">
                   <span class="resume_logo"
                     ><img src="/img/default_profile.png" alt="프로필이미지"
                   /></span>
@@ -80,7 +80,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                 </a>
               </li>
               <li class="resume_cont">
-                <a href="#">
+                <a href="resumeDetail">
                   <span class="resume_logo"
                     ><img src="/img/default_profile.png" alt="프로필이미지"
                   /></span>
@@ -106,7 +106,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
 
             <ul id="tab-2" class="resume_inner resume_inner2 tab-content">
               <li class="resume_cont">
-                <a href="#">
+                <a href="resumeDetail">
                   <span class="resume_logo"
                     ><img src="/img/default_profile.png" alt="프로필이미지"
                   /></span>
@@ -128,7 +128,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                 </a>
               </li>
               <li class="resume_cont">
-                <a href="#">
+                <a href="resumeDetail">
                   <span class="resume_logo"
                     ><img src="/img/default_profile.png" alt="프로필이미지"
                   /></span>
@@ -150,7 +150,7 @@ pageEncoding="UTF-8"%> <%@ include file="../layout/headerCompany.jsp"%>
                 </a>
               </li>
               <li class="resume_cont">
-                <a href="#">
+                <a href="resumeDetail">
                   <span class="resume_logo"
                     ><img src="/img/default_profile.png" alt="프로필이미지"
                   /></span>
