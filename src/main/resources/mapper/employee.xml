@@ -5,7 +5,7 @@
 <mapper namespace="site.metacoding.frontproject.domain.employee.EmployeeDao">
 
 	<insert id="insert">
-		INSERT INTO employee(NAME, created_at) VALUES(#{name}, NOW());
+		INSERT INTO employee(NAME, created_at) VALUES(#{name}, NOW())
 	</insert>
 
 	<select id="findAll"
