@@ -43,6 +43,9 @@ public class Resume {
     private String employeeTel;
     private String employeeLocation;
 
+    // 내 이력서 목록 볼때 관심분야 표시용
+    private String jobName;
+
     public void update(UpdateDto updateDto) {
         this.resumeName = updateDto.getResumeName();
         this.resumeImage = updateDto.getResumeImage();

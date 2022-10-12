@@ -14,4 +14,8 @@ public interface ResumeDao {
     public void update(Resume resumePS);
 
     public void deleteById(Integer resumeId);
+
+    public List<Resume> findByEmployeeId(Integer employeeId);
+
+    public void updateMain(Integer resumeId);
 }
