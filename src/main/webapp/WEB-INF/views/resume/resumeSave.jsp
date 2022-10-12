@@ -206,7 +206,7 @@
                     <div class="field_select">
                         <div class="select-group">
                             <c:forEach var="jobPS" items="${jobPS}">
-                                <input type='radio' id='jobId' name='radio' value="${jobPS.jobId}" />${jobPS.jobName}
+                                <input type='radio' id='jobId' name='jobId' value="${jobPS.jobId}" />${jobPS.jobName}
                                 <br>
                             </c:forEach>
                         </div>
@@ -250,8 +250,10 @@
                     careerPosition: $("#career_position").val(),
                     careerDepartment: $("#career_section").val(),
                     careerTask: $("#career_task").val(),
-                    jobId: $("#jobId").val(),
+                    jobId: $('input[id=jobId]:checked').val(),
                 };
+
+                console.log(data.jobId);
 
                 $.ajax("/emp/resumeSave", {
                     type: "POST",
@@ -268,7 +270,7 @@
                     } else {
                         alert("등록에 실패하였습니다");
                     }
-                });
+                })
             }
         </script>
 

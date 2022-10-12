@@ -19,7 +19,9 @@ import site.metacoding.frontproject.domain.resume.Resume;
 import site.metacoding.frontproject.service.EmployeeService;
 import site.metacoding.frontproject.service.JobService;
 import site.metacoding.frontproject.service.ResumeService;
+import site.metacoding.frontproject.web.dto.request.UpdateDto;
 import site.metacoding.frontproject.web.dto.response.CMRespDto;
+import org.springframework.web.bind.annotation.PutMapping;
 
 @RequiredArgsConstructor
 @Controller
@@ -54,9 +56,19 @@ public class ResumeController {
         return new CMRespDto<>(1, "이력서 작성 성공", null);
     }
 
-    @GetMapping("emp/resumeUpdate")
-    public String 이력서수정() { // 이력서 수정 페이지
+    @GetMapping("emp/resumeUpdateForm/{resumeId}")
+    public String 이력서수정화면불러오기(@PathVariable Integer resumeId, Model model) { // 이력서 수정 페이지
+        Resume resumePS = resumeService.이력서한건보기(resumeId);
+        model.addAttribute("resumePS", resumePS);
+        List<Job> jobPS = jobService.관심직무보기();
+        model.addAttribute("jobPS", jobPS);
         return "resume/resumeUpdate";
+    }
+
+    @PutMapping(value = "emp/resumeUpdate/{resumeId}")
+    public @ResponseBody CMRespDto<?> 이력서수정(@PathVariable Integer resumeId, @RequestBody UpdateDto updateDto) {
+        resumeService.이력서수정(resumeId, updateDto);
+        return new CMRespDto<>(1, "이력서 수정 성공", null);
     }
 
 }

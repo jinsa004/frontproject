@@ -5,8 +5,38 @@
     <insert id="insert">
         insert into resume(resume_name, employee_id, resume_image, highschool_name, highschool_startdate, highschool_enddate, highschool_major, 
         univ_name, univ_startdate, univ_enddate, univ_major, univ_grades, prev_co, career_period, career_position, career_department, career_task, job_id, is_main, created_at) 
-        VALUES(#{resumeName}, #{employeeId}, #{resumeImage}, #{highschoolName}, #{highschoolStartdate}, #{highschoolEnddate},  #{highschoolMajor}, #{univName}, #{univStartdate}, #{univEnddate}, #{univMajor}, #{univGrades}, #{prevCo}, #{careerPeriod}, #{careerPosition}, #{careerDepartment}, #{careerTask}, 1, false, NOW())
+        VALUES(#{resumeName}, #{employeeId}, #{resumeImage}, #{highschoolName}, #{highschoolStartdate}, #{highschoolEnddate},  #{highschoolMajor}, #{univName}, #{univStartdate}, #{univEnddate}, #{univMajor}, #{univGrades}, #{prevCo}, #{careerPeriod}, #{careerPosition}, #{careerDepartment}, #{careerTask}, #{jobId}, false, NOW())
 
     </insert>
+
+    <select id="findById" resultType="site.metacoding.frontproject.domain.resume.Resume">
+        SELECT r.*, e.employee_name, STR_TO_DATE(e.employee_birth, '%Y%m%d') employee_birth, e.employee_sex, e.employee_email, REGEXP_REPLACE(e.employee_tel, '(02|.{3})(.+)(.{4})', '\\1-\\2-\\3') employee_tel, e.employee_location
+        FROM resume r
+        INNER JOIN employee e
+        ON r.employee_id = e.employee_id
+        WHERE r.resume_id = #{resumeId}
+    </select>
+
+    <update id="update">
+        UPDATE resume SET
+        resume_name = #{resumeName}, 
+        resume_image = #{resumeImage}, 
+        highschool_name = #{highschoolName}, 
+        highschool_startdate = #{highschoolStartdate}, 
+        highschool_enddate = #{highschoolEnddate}, 
+        highschool_major = #{highschoolMajor}, 
+        univ_name = #{univName}, 
+        univ_startdate = #{univStartdate}, 
+        univ_enddate = #{univEnddate}, 
+        univ_major = #{univMajor}, 
+        univ_grades = #{univGrades}, 
+        prev_co = #{prevCo}, 
+        career_period = #{careerPeriod}, 
+        career_position = #{careerPosition}, 
+        career_department = #{careerDepartment}, 
+        career_task = #{careerTask}, 
+        job_id = #{jobId}
+        WHERE resume_id = #{resumeId}
+    </update>
 
 </mapper>
